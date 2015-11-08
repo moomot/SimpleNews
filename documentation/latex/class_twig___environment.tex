@@ -1,0 +1,1262 @@
+\hypertarget{class_twig___environment}{}\section{Twig\+\_\+\+Environment Class Reference}
+\label{class_twig___environment}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___environment_aeb7b9fc79ec16f0d18b8685a9302873a}{\+\_\+\+\_\+construct} (\hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} \$loader=null, \$options=array())
+\item 
+\hyperlink{class_twig___environment_a9f3561c0378f53108aa9673bdd3c63a0}{get\+Base\+Template\+Class} ()
+\item 
+\hyperlink{class_twig___environment_a923e6b2ef89e647030c100214896548c}{set\+Base\+Template\+Class} (\$class)
+\item 
+\hyperlink{class_twig___environment_a942b0cfbc1005c9bb0a5f2b0f7d25a25}{enable\+Debug} ()
+\item 
+\hyperlink{class_twig___environment_ad8fe55ee3d188c1b0d71585653debfef}{disable\+Debug} ()
+\item 
+\hyperlink{class_twig___environment_a017d21b4d0e1ee6f9cdd9d805793f076}{is\+Debug} ()
+\item 
+\hyperlink{class_twig___environment_af27b2d02a1bd3d7dc0d2e72dff771cab}{enable\+Auto\+Reload} ()
+\item 
+\hyperlink{class_twig___environment_a46062846c7f95b6b290e36d90c296491}{disable\+Auto\+Reload} ()
+\item 
+\hyperlink{class_twig___environment_a7ba43ac4c9bdd0aefcd5140e4ea87a08}{is\+Auto\+Reload} ()
+\item 
+\hyperlink{class_twig___environment_afe904f5f015cd40f965d5f524611c3fa}{enable\+Strict\+Variables} ()
+\item 
+\hyperlink{class_twig___environment_a91b21a6aa5aed10b4f89888eaadefc80}{disable\+Strict\+Variables} ()
+\item 
+\hyperlink{class_twig___environment_ab39d5897ee5022ecc92032d769b9c60c}{is\+Strict\+Variables} ()
+\item 
+\hyperlink{class_twig___environment_ac4d56a528ec8b416428a2c3c86672dc8}{get\+Cache} ()
+\item 
+\hyperlink{class_twig___environment_a1bfa0b30d50d9ccce38cd1bcf2375109}{set\+Cache} (\$cache)
+\item 
+\hyperlink{class_twig___environment_a453c3932d4a4b360c9c46216a0a762c4}{get\+Cache\+Filename} (\$name)
+\item 
+\hyperlink{class_twig___environment_a4949e6cb86c3444141918d26d1e6c741}{get\+Template\+Class} (\$name, \$index=null)
+\item 
+\hyperlink{class_twig___environment_a996a70040832913180f69561952d5be5}{get\+Template\+Class\+Prefix} ()
+\item 
+\hyperlink{class_twig___environment_a8f5169d8953835c0a313d3a62344ce58}{render} (\$name, array \$context=array())
+\item 
+\hyperlink{class_twig___environment_a09c36679881e4567dd156657559aa314}{display} (\$name, array \$context=array())
+\item 
+\hyperlink{class_twig___environment_a0641874ee64bc25d356b609b6cda9700}{load\+Template} (\$name, \$index=null)
+\item 
+\hyperlink{class_twig___environment_a339848673fd347999fa3e538438be8cb}{create\+Template} (\$template)
+\item 
+\hyperlink{class_twig___environment_a550e54bc7b1aaab7001854bfeea98f72}{is\+Template\+Fresh} (\$name, \$time)
+\item 
+\hyperlink{class_twig___environment_af1cc34fcbd8561be8a6075517d107630}{resolve\+Template} (\$names)
+\item 
+\hyperlink{class_twig___environment_a9b6e645c229f4cef3f7bf6e3eca5ae2d}{clear\+Template\+Cache} ()
+\item 
+\hyperlink{class_twig___environment_a1b98cd192f56b7d2234816b62203edff}{clear\+Cache\+Files} ()
+\item 
+\hyperlink{class_twig___environment_a41904927ec501424d235015965e8cdee}{get\+Lexer} ()
+\item 
+\hyperlink{class_twig___environment_aee05c0d74c1194a030f13d7d2e3c1b6f}{set\+Lexer} (\hyperlink{interface_twig___lexer_interface}{Twig\+\_\+\+Lexer\+Interface} \$lexer)
+\item 
+\hyperlink{class_twig___environment_a69b81a225a371337d9854e72ec3f676d}{tokenize} (\$source, \$name=null)
+\item 
+\hyperlink{class_twig___environment_a4b6907ea868dc9053e1f7d6260fa4b4f}{get\+Parser} ()
+\item 
+\hyperlink{class_twig___environment_ac16cd9a5f9db326226c01aa3ee943857}{set\+Parser} (\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} \$parser)
+\item 
+\hyperlink{class_twig___environment_a1de4218ce9c025eaa18ce55616c98fe7}{parse} (\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} \$stream)
+\item 
+\hyperlink{class_twig___environment_ac37cd6bf8b37e0cde150727f16a535f8}{get\+Compiler} ()
+\item 
+\hyperlink{class_twig___environment_a1dcd474337e99babac147ee2384353de}{set\+Compiler} (\hyperlink{interface_twig___compiler_interface}{Twig\+\_\+\+Compiler\+Interface} \$compiler)
+\item 
+\hyperlink{class_twig___environment_a3f2ebfe4306bcd152c544085112319b5}{compile} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node)
+\item 
+\hyperlink{class_twig___environment_a71d4b339e442b2024b9849b9bc802b7a}{compile\+Source} (\$source, \$name=null)
+\item 
+\hyperlink{class_twig___environment_a7b2e6b9f72715d88eebb3ee0816057b4}{set\+Loader} (\hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} \$loader)
+\item 
+\hyperlink{class_twig___environment_a461527c1de39a5520c52951b8f03d99f}{get\+Loader} ()
+\item 
+\hyperlink{class_twig___environment_a81ee11b0f5fadecaece55170fea54b29}{set\+Charset} (\$charset)
+\item 
+\hyperlink{class_twig___environment_abca2d528da8311b6fcfe040768cbaa24}{get\+Charset} ()
+\item 
+\hyperlink{class_twig___environment_a0dac3aaa30b0ac1d920ebdfe22eaae7f}{init\+Runtime} ()
+\item 
+\hyperlink{class_twig___environment_a5ca11be64dd4ff9f21e31e3ebc2619b1}{has\+Extension} (\$name)
+\item 
+\hyperlink{class_twig___environment_af2f1572d80cede386cbf11bd7e213c31}{get\+Extension} (\$name)
+\item 
+\hyperlink{class_twig___environment_a370f3b63254ddd9a5c5b0a7d22013a95}{add\+Extension} (\hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} \$extension)
+\item 
+\hyperlink{class_twig___environment_a231cd85fca6feec29726a7b351baa112}{remove\+Extension} (\$name)
+\item 
+\hyperlink{class_twig___environment_ad226f4ce37612efcc6717bd592ca7b7d}{set\+Extensions} (array \$extensions)
+\item 
+\hyperlink{class_twig___environment_a0bf1cdb692f876fae6acd2bfbb548244}{get\+Extensions} ()
+\item 
+\hyperlink{class_twig___environment_a8f805d29eac2b8ce1da513e9390952f3}{add\+Token\+Parser} (\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} \$parser)
+\item 
+\hyperlink{class_twig___environment_a8fd35903c3d01c0f0078f59d142eb063}{get\+Token\+Parsers} ()
+\item 
+\hyperlink{class_twig___environment_ae07173ab06a20e2f5bd928cc0518e01f}{get\+Tags} ()
+\item 
+\hyperlink{class_twig___environment_adc294d7c409f47d2c26847601897c6db}{add\+Node\+Visitor} (\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} \$visitor)
+\item 
+\hyperlink{class_twig___environment_aec02093179d390d22ae4083f23a1d74a}{get\+Node\+Visitors} ()
+\item 
+\hyperlink{class_twig___environment_a07b5aed0599bf6b5a959138a50c20934}{add\+Filter} (\$name, \$filter=null)
+\item 
+\hyperlink{class_twig___environment_a4a7bab9eccf45585b757bc4637d49c51}{get\+Filter} (\$name)
+\item 
+\hypertarget{class_twig___environment_a34e0732405a6c7994b333ce2f8a1deb0}{}{\bfseries register\+Undefined\+Filter\+Callback} (\$callable)\label{class_twig___environment_a34e0732405a6c7994b333ce2f8a1deb0}
+
+\item 
+\hyperlink{class_twig___environment_a428d91319fc73d3038784cf5436936b6}{get\+Filters} ()
+\item 
+\hyperlink{class_twig___environment_abffdc04383a36adfedf9e01be73eb577}{add\+Test} (\$name, \$test=null)
+\item 
+\hyperlink{class_twig___environment_a7e247dd31cc8d37a6c97353a062a0080}{get\+Tests} ()
+\item 
+\hyperlink{class_twig___environment_a981e961a31852f7ad5ff8176a886208c}{get\+Test} (\$name)
+\item 
+\hyperlink{class_twig___environment_a6e2559ac470ee7534cd0c717c74fb1d4}{add\+Function} (\$name, \$function=null)
+\item 
+\hyperlink{class_twig___environment_ae4433c0b7cff67452143bc6abd237330}{get\+Function} (\$name)
+\item 
+\hypertarget{class_twig___environment_a64b35a5fbb8691099c5fcdb36e763779}{}{\bfseries register\+Undefined\+Function\+Callback} (\$callable)\label{class_twig___environment_a64b35a5fbb8691099c5fcdb36e763779}
+
+\item 
+\hyperlink{class_twig___environment_a131c2522f07821f77cd1d038c216031b}{get\+Functions} ()
+\item 
+\hyperlink{class_twig___environment_ad967754d97f0c9ccd329246fa9255808}{add\+Global} (\$name, \$value)
+\item 
+\hyperlink{class_twig___environment_ae3a26252ce6efe503698085a7ed69dad}{get\+Globals} ()
+\item 
+\hyperlink{class_twig___environment_a7e84fd2f4a105b68c7167060ae59b87d}{merge\+Globals} (array \$context)
+\item 
+\hyperlink{class_twig___environment_a03f904feb2595160e2329a31e3246b3a}{get\+Unary\+Operators} ()
+\item 
+\hyperlink{class_twig___environment_ac1c8ecccd7414ea56428a303bc47f66b}{get\+Binary\+Operators} ()
+\item 
+\hypertarget{class_twig___environment_ac9eaf340606e898687d353a69f1a0b61}{}{\bfseries compute\+Alternatives} (\$name, \$items)\label{class_twig___environment_ac9eaf340606e898687d353a69f1a0b61}
+
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___environment_af71005841ce53adac00581ab0ba24c1f}{}const {\bfseries V\+E\+R\+S\+I\+O\+N} = \textquotesingle{}1.\+18.\+1-\/D\+E\+V\textquotesingle{}\label{class_twig___environment_af71005841ce53adac00581ab0ba24c1f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___environment_a09fabb543f6dd22f9e668ef8f3102312}{}{\bfseries init\+Globals} ()\label{class_twig___environment_a09fabb543f6dd22f9e668ef8f3102312}
+
+\item 
+\hypertarget{class_twig___environment_a481cddce0a61550e4616074158cf84f5}{}{\bfseries init\+Extensions} ()\label{class_twig___environment_a481cddce0a61550e4616074158cf84f5}
+
+\item 
+\hypertarget{class_twig___environment_ae8f85d11b80d3c925bb98f6711795e87}{}{\bfseries init\+Extension} (\hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} \$extension)\label{class_twig___environment_ae8f85d11b80d3c925bb98f6711795e87}
+
+\item 
+\hypertarget{class_twig___environment_afef0e86e8f08fa1d0c4006ce65bede10}{}{\bfseries write\+Cache\+File} (\$file, \$content)\label{class_twig___environment_afef0e86e8f08fa1d0c4006ce65bede10}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___environment_af10158dd74b75f1d337e83102d6b82ce}{}{\bfseries \$charset}\label{class_twig___environment_af10158dd74b75f1d337e83102d6b82ce}
+
+\item 
+\hypertarget{class_twig___environment_ab832f4c463ee1c9ba2e9464265f7ea3b}{}{\bfseries \$loader}\label{class_twig___environment_ab832f4c463ee1c9ba2e9464265f7ea3b}
+
+\item 
+\hypertarget{class_twig___environment_a85ae3e64cd40e9564adceb010085e9dd}{}{\bfseries \$debug}\label{class_twig___environment_a85ae3e64cd40e9564adceb010085e9dd}
+
+\item 
+\hypertarget{class_twig___environment_ae887a6f4d0cf24eed29e4202ed82f559}{}{\bfseries \$auto\+Reload}\label{class_twig___environment_ae887a6f4d0cf24eed29e4202ed82f559}
+
+\item 
+\hypertarget{class_twig___environment_ac2dc76d756ec398393d4b1d23659276c}{}{\bfseries \$cache}\label{class_twig___environment_ac2dc76d756ec398393d4b1d23659276c}
+
+\item 
+\hypertarget{class_twig___environment_a63508a0b3a11f514f2b2124f99a05baf}{}{\bfseries \$lexer}\label{class_twig___environment_a63508a0b3a11f514f2b2124f99a05baf}
+
+\item 
+\hypertarget{class_twig___environment_a147a766daa03d52576c7345fea31c945}{}{\bfseries \$parser}\label{class_twig___environment_a147a766daa03d52576c7345fea31c945}
+
+\item 
+\hypertarget{class_twig___environment_a8e5d240701ad41cd982ea35d9acd9ab7}{}{\bfseries \$compiler}\label{class_twig___environment_a8e5d240701ad41cd982ea35d9acd9ab7}
+
+\item 
+\hypertarget{class_twig___environment_a98b0e83a8f37e0143916958db3aa8283}{}{\bfseries \$base\+Template\+Class}\label{class_twig___environment_a98b0e83a8f37e0143916958db3aa8283}
+
+\item 
+\hypertarget{class_twig___environment_a78dd0f5a8f983099dc6499a2d7cdf7aa}{}{\bfseries \$extensions}\label{class_twig___environment_a78dd0f5a8f983099dc6499a2d7cdf7aa}
+
+\item 
+\hypertarget{class_twig___environment_ae7df9b3add8c1b302615fc85fbd27de0}{}{\bfseries \$parsers}\label{class_twig___environment_ae7df9b3add8c1b302615fc85fbd27de0}
+
+\item 
+\hypertarget{class_twig___environment_a63a73490fa0428629a602fd9042a95aa}{}{\bfseries \$visitors}\label{class_twig___environment_a63a73490fa0428629a602fd9042a95aa}
+
+\item 
+\hypertarget{class_twig___environment_ae222f32233a38635bef58d24a13c9df5}{}{\bfseries \$filters}\label{class_twig___environment_ae222f32233a38635bef58d24a13c9df5}
+
+\item 
+\hypertarget{class_twig___environment_a6d7f4b753e7eb18b328a7eeba5e0094f}{}{\bfseries \$tests}\label{class_twig___environment_a6d7f4b753e7eb18b328a7eeba5e0094f}
+
+\item 
+\hypertarget{class_twig___environment_aa75daea491817f3b64daa2f51128bcdf}{}{\bfseries \$functions}\label{class_twig___environment_aa75daea491817f3b64daa2f51128bcdf}
+
+\item 
+\hypertarget{class_twig___environment_aab94a86ac6c11a08ea99c0662106ec1e}{}{\bfseries \$globals}\label{class_twig___environment_aab94a86ac6c11a08ea99c0662106ec1e}
+
+\item 
+\hypertarget{class_twig___environment_ab705dd9043d946e678f5dca0b6a129dd}{}{\bfseries \$runtime\+Initialized}\label{class_twig___environment_ab705dd9043d946e678f5dca0b6a129dd}
+
+\item 
+\hypertarget{class_twig___environment_a5e94e534ccfc29abf31118dd6f8a417d}{}{\bfseries \$extension\+Initialized}\label{class_twig___environment_a5e94e534ccfc29abf31118dd6f8a417d}
+
+\item 
+\hypertarget{class_twig___environment_a499c81711b249d14b06f801914067e35}{}{\bfseries \$loaded\+Templates}\label{class_twig___environment_a499c81711b249d14b06f801914067e35}
+
+\item 
+\hypertarget{class_twig___environment_a4468bee01e5114ad4844ffbcd6118bac}{}{\bfseries \$strict\+Variables}\label{class_twig___environment_a4468bee01e5114ad4844ffbcd6118bac}
+
+\item 
+\hypertarget{class_twig___environment_ae627d836785e9074fdd05ea18ed73415}{}{\bfseries \$unary\+Operators}\label{class_twig___environment_ae627d836785e9074fdd05ea18ed73415}
+
+\item 
+\hypertarget{class_twig___environment_a0daebcbd551638ff610aee2905c70974}{}{\bfseries \$binary\+Operators}\label{class_twig___environment_a0daebcbd551638ff610aee2905c70974}
+
+\item 
+\hypertarget{class_twig___environment_af10faffee6faa6f0321ea6642906308d}{}{\bfseries \$template\+Class\+Prefix} = \textquotesingle{}\+\_\+\+\_\+\+Twig\+Template\+\_\+\textquotesingle{}\label{class_twig___environment_af10faffee6faa6f0321ea6642906308d}
+
+\item 
+\hypertarget{class_twig___environment_a3b3bccac51f11cd01d499a02b517366e}{}{\bfseries \$function\+Callbacks}\label{class_twig___environment_a3b3bccac51f11cd01d499a02b517366e}
+
+\item 
+\hypertarget{class_twig___environment_ac5fa01924d75371c25209c49df63e4ce}{}{\bfseries \$filter\+Callbacks}\label{class_twig___environment_ac5fa01924d75371c25209c49df63e4ce}
+
+\item 
+\hypertarget{class_twig___environment_a1063dfa8a1c0b5afe9b8359237f73042}{}{\bfseries \$staging}\label{class_twig___environment_a1063dfa8a1c0b5afe9b8359237f73042}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stores the Twig configuration.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___environment_aeb7b9fc79ec16f0d18b8685a9302873a}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Loader\+Interface}}]{\$loader = {\ttfamily null}, }
+\item[{}]{\$options = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_aeb7b9fc79ec16f0d18b8685a9302873a}
+Constructor.
+
+Available options\+:
+
+
+\begin{DoxyItemize}
+\item debug\+: When set to true, it automatically set \char`\"{}auto\+\_\+reload\char`\"{} to true as well (default to false).
+\item charset\+: The charset used by the templates (default to U\+T\+F-\/8).
+\item base\+\_\+template\+\_\+class\+: The base template class to use for generated templates (default to \hyperlink{class_twig___template}{Twig\+\_\+\+Template}).
+\item cache\+: An absolute path where to store the compiled templates, or false to disable compilation cache (default).
+\item auto\+\_\+reload\+: Whether to reload the template if the original source changed. If you don\textquotesingle{}t provide the auto\+\_\+reload option, it will be determined automatically based on the debug value.
+\item strict\+\_\+variables\+: Whether to ignore invalid variables in templates (default to false).
+\item autoescape\+: Whether to enable auto-\/escaping (default to html)\+:
+\begin{DoxyItemize}
+\item false\+: disable auto-\/escaping
+\item true\+: equivalent to html
+\item html, js\+: set the autoescaping to one of the supported strategies
+\item filename\+: set the autoescaping strategy based on the template filename extension
+\item P\+H\+P callback\+: a P\+H\+P callback that returns an escaping strategy based on the template \char`\"{}filename\char`\"{}
+\end{DoxyItemize}
+\item optimizations\+: A flag that indicates which optimizations to apply (default to -\/1 which means that all optimizations are enabled; set it to 0 to disable).
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} & {\em \$loader} & A \hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} instance \\
+\hline
+array & {\em \$options} & An array of options \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___environment_a370f3b63254ddd9a5c5b0a7d22013a95}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Extension@{add\+Extension}}
+\index{add\+Extension@{add\+Extension}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}add\+Extension (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Extension\+Interface}}]{\$extension}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a370f3b63254ddd9a5c5b0a7d22013a95}
+Registers an extension.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} & {\em \$extension} & A \hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a07b5aed0599bf6b5a959138a50c20934}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Filter@{add\+Filter}}
+\index{add\+Filter@{add\+Filter}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}add\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$filter = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a07b5aed0599bf6b5a959138a50c20934}
+Registers a Filter.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \hyperlink{class_twig___simple_filter}{Twig\+\_\+\+Simple\+Filter} & {\em \$name} & The filter name or a \hyperlink{class_twig___simple_filter}{Twig\+\_\+\+Simple\+Filter} instance \\
+\hline
+\hyperlink{interface_twig___filter_interface}{Twig\+\_\+\+Filter\+Interface} | \hyperlink{class_twig___simple_filter}{Twig\+\_\+\+Simple\+Filter} & {\em \$filter} & A \hyperlink{interface_twig___filter_interface}{Twig\+\_\+\+Filter\+Interface} instance or a \hyperlink{class_twig___simple_filter}{Twig\+\_\+\+Simple\+Filter} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a6e2559ac470ee7534cd0c717c74fb1d4}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Function@{add\+Function}}
+\index{add\+Function@{add\+Function}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Function}]{\setlength{\rightskip}{0pt plus 5cm}add\+Function (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$function = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a6e2559ac470ee7534cd0c717c74fb1d4}
+Registers a Function.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \hyperlink{class_twig___simple_function}{Twig\+\_\+\+Simple\+Function} & {\em \$name} & The function name or a \hyperlink{class_twig___simple_function}{Twig\+\_\+\+Simple\+Function} instance \\
+\hline
+\hyperlink{interface_twig___function_interface}{Twig\+\_\+\+Function\+Interface} | \hyperlink{class_twig___simple_function}{Twig\+\_\+\+Simple\+Function} & {\em \$function} & A \hyperlink{interface_twig___function_interface}{Twig\+\_\+\+Function\+Interface} instance or a \hyperlink{class_twig___simple_function}{Twig\+\_\+\+Simple\+Function} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_ad967754d97f0c9ccd329246fa9255808}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Global@{add\+Global}}
+\index{add\+Global@{add\+Global}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Global}]{\setlength{\rightskip}{0pt plus 5cm}add\+Global (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ad967754d97f0c9ccd329246fa9255808}
+Registers a Global.
+
+New globals can be added before compiling or rendering a template; but after, you can only update existing globals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The global name \\
+\hline
+mixed & {\em \$value} & The global value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_adc294d7c409f47d2c26847601897c6db}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Node\+Visitor@{add\+Node\+Visitor}}
+\index{add\+Node\+Visitor@{add\+Node\+Visitor}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Node\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}add\+Node\+Visitor (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Visitor\+Interface}}]{\$visitor}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_adc294d7c409f47d2c26847601897c6db}
+Registers a Node Visitor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} & {\em \$visitor} & A \hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_abffdc04383a36adfedf9e01be73eb577}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Test@{add\+Test}}
+\index{add\+Test@{add\+Test}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Test}]{\setlength{\rightskip}{0pt plus 5cm}add\+Test (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$test = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_abffdc04383a36adfedf9e01be73eb577}
+Registers a Test.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \hyperlink{class_twig___simple_test}{Twig\+\_\+\+Simple\+Test} & {\em \$name} & The test name or a \hyperlink{class_twig___simple_test}{Twig\+\_\+\+Simple\+Test} instance \\
+\hline
+\hyperlink{interface_twig___test_interface}{Twig\+\_\+\+Test\+Interface} | \hyperlink{class_twig___simple_test}{Twig\+\_\+\+Simple\+Test} & {\em \$test} & A \hyperlink{interface_twig___test_interface}{Twig\+\_\+\+Test\+Interface} instance or a \hyperlink{class_twig___simple_test}{Twig\+\_\+\+Simple\+Test} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a8f805d29eac2b8ce1da513e9390952f3}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!add\+Token\+Parser@{add\+Token\+Parser}}
+\index{add\+Token\+Parser@{add\+Token\+Parser}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{add\+Token\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}add\+Token\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a8f805d29eac2b8ce1da513e9390952f3}
+Registers a Token Parser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} & {\em \$parser} & A \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a1b98cd192f56b7d2234816b62203edff}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!clear\+Cache\+Files@{clear\+Cache\+Files}}
+\index{clear\+Cache\+Files@{clear\+Cache\+Files}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{clear\+Cache\+Files}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Cache\+Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a1b98cd192f56b7d2234816b62203edff}
+Clears the template cache files on the filesystem. \hypertarget{class_twig___environment_a9b6e645c229f4cef3f7bf6e3eca5ae2d}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!clear\+Template\+Cache@{clear\+Template\+Cache}}
+\index{clear\+Template\+Cache@{clear\+Template\+Cache}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{clear\+Template\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}clear\+Template\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a9b6e645c229f4cef3f7bf6e3eca5ae2d}
+Clears the internal template cache. \hypertarget{class_twig___environment_a3f2ebfe4306bcd152c544085112319b5}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!compile@{compile}}
+\index{compile@{compile}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a3f2ebfe4306bcd152c544085112319b5}
+Compiles a node and returns the P\+H\+P code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & A \hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The compiled P\+H\+P source code 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a71d4b339e442b2024b9849b9bc802b7a}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!compile\+Source@{compile\+Source}}
+\index{compile\+Source@{compile\+Source}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{compile\+Source}]{\setlength{\rightskip}{0pt plus 5cm}compile\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$source, }
+\item[{}]{\$name = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a71d4b339e442b2024b9849b9bc802b7a}
+Compiles a template source code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source} & The template source code \\
+\hline
+string & {\em \$name} & The template name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The compiled P\+H\+P source code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When there was an error during tokenizing, parsing or compiling \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_a339848673fd347999fa3e538438be8cb}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!create\+Template@{create\+Template}}
+\index{create\+Template@{create\+Template}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{create\+Template}]{\setlength{\rightskip}{0pt plus 5cm}create\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$template}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a339848673fd347999fa3e538438be8cb}
+Creates a template from source.
+
+This method should not be used as a generic way to load templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+int & {\em \$index} & The index if it is an embedded template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___template}{Twig\+\_\+\+Template} A template instance representing the given template name
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When the template cannot be found \\
+\hline
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When an error occurred during compilation \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_a46062846c7f95b6b290e36d90c296491}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!disable\+Auto\+Reload@{disable\+Auto\+Reload}}
+\index{disable\+Auto\+Reload@{disable\+Auto\+Reload}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{disable\+Auto\+Reload}]{\setlength{\rightskip}{0pt plus 5cm}disable\+Auto\+Reload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a46062846c7f95b6b290e36d90c296491}
+Disables the auto\+\_\+reload option. \hypertarget{class_twig___environment_ad8fe55ee3d188c1b0d71585653debfef}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!disable\+Debug@{disable\+Debug}}
+\index{disable\+Debug@{disable\+Debug}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{disable\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}disable\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ad8fe55ee3d188c1b0d71585653debfef}
+Disables debugging mode. \hypertarget{class_twig___environment_a91b21a6aa5aed10b4f89888eaadefc80}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!disable\+Strict\+Variables@{disable\+Strict\+Variables}}
+\index{disable\+Strict\+Variables@{disable\+Strict\+Variables}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{disable\+Strict\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}disable\+Strict\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a91b21a6aa5aed10b4f89888eaadefc80}
+Disables the strict\+\_\+variables option. \hypertarget{class_twig___environment_a09c36679881e4567dd156657559aa314}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!display@{display}}
+\index{display@{display}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}display (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{array}]{\$context = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a09c36679881e4567dd156657559aa314}
+Displays a template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+array & {\em \$context} & An array of parameters to pass to the template\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When the template cannot be found \\
+\hline
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When an error occurred during compilation \\
+\hline
+{\em \hyperlink{class_twig___error___runtime}{Twig\+\_\+\+Error\+\_\+\+Runtime}} & When an error occurred during rendering \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_af27b2d02a1bd3d7dc0d2e72dff771cab}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!enable\+Auto\+Reload@{enable\+Auto\+Reload}}
+\index{enable\+Auto\+Reload@{enable\+Auto\+Reload}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{enable\+Auto\+Reload}]{\setlength{\rightskip}{0pt plus 5cm}enable\+Auto\+Reload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_af27b2d02a1bd3d7dc0d2e72dff771cab}
+Enables the auto\+\_\+reload option. \hypertarget{class_twig___environment_a942b0cfbc1005c9bb0a5f2b0f7d25a25}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!enable\+Debug@{enable\+Debug}}
+\index{enable\+Debug@{enable\+Debug}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{enable\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}enable\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a942b0cfbc1005c9bb0a5f2b0f7d25a25}
+Enables debugging mode. \hypertarget{class_twig___environment_afe904f5f015cd40f965d5f524611c3fa}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!enable\+Strict\+Variables@{enable\+Strict\+Variables}}
+\index{enable\+Strict\+Variables@{enable\+Strict\+Variables}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{enable\+Strict\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}enable\+Strict\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_afe904f5f015cd40f965d5f524611c3fa}
+Enables the strict\+\_\+variables option. \hypertarget{class_twig___environment_a9f3561c0378f53108aa9673bdd3c63a0}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Base\+Template\+Class@{get\+Base\+Template\+Class}}
+\index{get\+Base\+Template\+Class@{get\+Base\+Template\+Class}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Base\+Template\+Class}]{\setlength{\rightskip}{0pt plus 5cm}get\+Base\+Template\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a9f3561c0378f53108aa9673bdd3c63a0}
+Gets the base template class for compiled templates.
+
+\begin{DoxyReturn}{Returns}
+string The base template class name 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_ac1c8ecccd7414ea56428a303bc47f66b}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Binary\+Operators@{get\+Binary\+Operators}}
+\index{get\+Binary\+Operators@{get\+Binary\+Operators}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Binary\+Operators}]{\setlength{\rightskip}{0pt plus 5cm}get\+Binary\+Operators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ac1c8ecccd7414ea56428a303bc47f66b}
+Gets the registered binary Operators.
+
+\begin{DoxyReturn}{Returns}
+array An array of binary operators 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_ac4d56a528ec8b416428a2c3c86672dc8}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Cache@{get\+Cache}}
+\index{get\+Cache@{get\+Cache}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ac4d56a528ec8b416428a2c3c86672dc8}
+Gets the cache directory or false if cache is disabled.
+
+\begin{DoxyReturn}{Returns}
+string$\vert$false 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a453c3932d4a4b360c9c46216a0a762c4}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Cache\+Filename@{get\+Cache\+Filename}}
+\index{get\+Cache\+Filename@{get\+Cache\+Filename}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Cache\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache\+Filename (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a453c3932d4a4b360c9c46216a0a762c4}
+Gets the cache filename for a given template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string$\vert$false The cache file name or false when caching is disabled 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_abca2d528da8311b6fcfe040768cbaa24}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Charset@{get\+Charset}}
+\index{get\+Charset@{get\+Charset}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Charset}]{\setlength{\rightskip}{0pt plus 5cm}get\+Charset (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_abca2d528da8311b6fcfe040768cbaa24}
+Gets the default template charset.
+
+\begin{DoxyReturn}{Returns}
+string The default charset 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_ac37cd6bf8b37e0cde150727f16a535f8}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Compiler@{get\+Compiler}}
+\index{get\+Compiler@{get\+Compiler}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Compiler}]{\setlength{\rightskip}{0pt plus 5cm}get\+Compiler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ac37cd6bf8b37e0cde150727f16a535f8}
+Gets the Compiler instance.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___compiler_interface}{Twig\+\_\+\+Compiler\+Interface} A \hyperlink{interface_twig___compiler_interface}{Twig\+\_\+\+Compiler\+Interface} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_af2f1572d80cede386cbf11bd7e213c31}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Extension@{get\+Extension}}
+\index{get\+Extension@{get\+Extension}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}get\+Extension (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_af2f1572d80cede386cbf11bd7e213c31}
+Gets an extension by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The extension name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} A \hyperlink{interface_twig___extension_interface}{Twig\+\_\+\+Extension\+Interface} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a0bf1cdb692f876fae6acd2bfbb548244}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Extensions@{get\+Extensions}}
+\index{get\+Extensions@{get\+Extensions}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Extensions}]{\setlength{\rightskip}{0pt plus 5cm}get\+Extensions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a0bf1cdb692f876fae6acd2bfbb548244}
+Returns all registered extensions.
+
+\begin{DoxyReturn}{Returns}
+array An array of extensions 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a4a7bab9eccf45585b757bc4637d49c51}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Filter@{get\+Filter}}
+\index{get\+Filter@{get\+Filter}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Filter}]{\setlength{\rightskip}{0pt plus 5cm}get\+Filter (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a4a7bab9eccf45585b757bc4637d49c51}
+Get a filter by name.
+
+Subclasses may override this method and load filters differently; so no list of filters is available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The filter name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Filter$\vert$false A \hyperlink{class_twig___filter}{Twig\+\_\+\+Filter} instance or false if the filter does not exist 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a428d91319fc73d3038784cf5436936b6}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Filters@{get\+Filters}}
+\index{get\+Filters@{get\+Filters}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}get\+Filters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a428d91319fc73d3038784cf5436936b6}
+Gets the registered Filters.
+
+Be warned that this method cannot return filters defined with register\+Undefined\+Function\+Callback.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___filter_interface}{Twig\+\_\+\+Filter\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___filter_interface}{Twig\+\_\+\+Filter\+Interface} instances
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+register\+Undefined\+Filter\+Callback 
+\end{DoxySeeAlso}
+\hypertarget{class_twig___environment_ae4433c0b7cff67452143bc6abd237330}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Function@{get\+Function}}
+\index{get\+Function@{get\+Function}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Function}]{\setlength{\rightskip}{0pt plus 5cm}get\+Function (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ae4433c0b7cff67452143bc6abd237330}
+Get a function by name.
+
+Subclasses may override this method and load functions differently; so no list of functions is available.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & function name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Function$\vert$false A \hyperlink{class_twig___function}{Twig\+\_\+\+Function} instance or false if the function does not exist 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a131c2522f07821f77cd1d038c216031b}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Functions@{get\+Functions}}
+\index{get\+Functions@{get\+Functions}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Functions}]{\setlength{\rightskip}{0pt plus 5cm}get\+Functions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a131c2522f07821f77cd1d038c216031b}
+Gets registered functions.
+
+Be warned that this method cannot return functions defined with register\+Undefined\+Function\+Callback.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___function_interface}{Twig\+\_\+\+Function\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___function_interface}{Twig\+\_\+\+Function\+Interface} instances
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{See also}
+register\+Undefined\+Function\+Callback 
+\end{DoxySeeAlso}
+\hypertarget{class_twig___environment_ae3a26252ce6efe503698085a7ed69dad}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Globals@{get\+Globals}}
+\index{get\+Globals@{get\+Globals}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Globals}]{\setlength{\rightskip}{0pt plus 5cm}get\+Globals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ae3a26252ce6efe503698085a7ed69dad}
+Gets the registered Globals.
+
+\begin{DoxyReturn}{Returns}
+array An array of globals 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a41904927ec501424d235015965e8cdee}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Lexer@{get\+Lexer}}
+\index{get\+Lexer@{get\+Lexer}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Lexer}]{\setlength{\rightskip}{0pt plus 5cm}get\+Lexer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a41904927ec501424d235015965e8cdee}
+Gets the Lexer instance.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___lexer_interface}{Twig\+\_\+\+Lexer\+Interface} A \hyperlink{interface_twig___lexer_interface}{Twig\+\_\+\+Lexer\+Interface} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a461527c1de39a5520c52951b8f03d99f}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Loader@{get\+Loader}}
+\index{get\+Loader@{get\+Loader}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}get\+Loader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a461527c1de39a5520c52951b8f03d99f}
+Gets the Loader instance.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} A \hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_aec02093179d390d22ae4083f23a1d74a}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Node\+Visitors@{get\+Node\+Visitors}}
+\index{get\+Node\+Visitors@{get\+Node\+Visitors}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Node\+Visitors}]{\setlength{\rightskip}{0pt plus 5cm}get\+Node\+Visitors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_aec02093179d390d22ae4083f23a1d74a}
+Gets the registered Node Visitors.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} instances 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a4b6907ea868dc9053e1f7d6260fa4b4f}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Parser@{get\+Parser}}
+\index{get\+Parser@{get\+Parser}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a4b6907ea868dc9053e1f7d6260fa4b4f}
+Gets the Parser instance.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_ae07173ab06a20e2f5bd928cc0518e01f}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Tags@{get\+Tags}}
+\index{get\+Tags@{get\+Tags}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Tags}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tags (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ae07173ab06a20e2f5bd928cc0518e01f}
+Gets registered tags.
+
+Be warned that this method cannot return tags defined by \hyperlink{interface_twig___token_parser_broker_interface}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface} classes.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} instances 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a4949e6cb86c3444141918d26d1e6c741}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Template\+Class@{get\+Template\+Class}}
+\index{get\+Template\+Class@{get\+Template\+Class}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Template\+Class}]{\setlength{\rightskip}{0pt plus 5cm}get\+Template\+Class (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a4949e6cb86c3444141918d26d1e6c741}
+Gets the template class associated with the given string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name for which to calculate the template class name \\
+\hline
+int & {\em \$index} & The index if it is an embedded template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The template class name 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a996a70040832913180f69561952d5be5}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Template\+Class\+Prefix@{get\+Template\+Class\+Prefix}}
+\index{get\+Template\+Class\+Prefix@{get\+Template\+Class\+Prefix}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Template\+Class\+Prefix}]{\setlength{\rightskip}{0pt plus 5cm}get\+Template\+Class\+Prefix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a996a70040832913180f69561952d5be5}
+Gets the template class prefix.
+
+\begin{DoxyReturn}{Returns}
+string The template class prefix 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a981e961a31852f7ad5ff8176a886208c}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Test@{get\+Test}}
+\index{get\+Test@{get\+Test}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Test}]{\setlength{\rightskip}{0pt plus 5cm}get\+Test (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a981e961a31852f7ad5ff8176a886208c}
+Gets a test by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The test name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Test$\vert$false A \hyperlink{class_twig___test}{Twig\+\_\+\+Test} instance or false if the test does not exist 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a7e247dd31cc8d37a6c97353a062a0080}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Tests@{get\+Tests}}
+\index{get\+Tests@{get\+Tests}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a7e247dd31cc8d37a6c97353a062a0080}
+Gets the registered Tests.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___test_interface}{Twig\+\_\+\+Test\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___test_interface}{Twig\+\_\+\+Test\+Interface} instances 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a8fd35903c3d01c0f0078f59d142eb063}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Token\+Parsers@{get\+Token\+Parsers}}
+\index{get\+Token\+Parsers@{get\+Token\+Parsers}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Token\+Parsers}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token\+Parsers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a8fd35903c3d01c0f0078f59d142eb063}
+Gets the registered Token Parsers.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___token_parser_broker_interface}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface} A broker containing token parsers 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a03f904feb2595160e2329a31e3246b3a}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!get\+Unary\+Operators@{get\+Unary\+Operators}}
+\index{get\+Unary\+Operators@{get\+Unary\+Operators}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{get\+Unary\+Operators}]{\setlength{\rightskip}{0pt plus 5cm}get\+Unary\+Operators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a03f904feb2595160e2329a31e3246b3a}
+Gets the registered unary Operators.
+
+\begin{DoxyReturn}{Returns}
+array An array of unary operators 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a5ca11be64dd4ff9f21e31e3ebc2619b1}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!has\+Extension@{has\+Extension}}
+\index{has\+Extension@{has\+Extension}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{has\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}has\+Extension (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a5ca11be64dd4ff9f21e31e3ebc2619b1}
+Returns true if the given extension is registered.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The extension name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool Whether the extension is registered or not 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a0dac3aaa30b0ac1d920ebdfe22eaae7f}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!init\+Runtime@{init\+Runtime}}
+\index{init\+Runtime@{init\+Runtime}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{init\+Runtime}]{\setlength{\rightskip}{0pt plus 5cm}init\+Runtime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a0dac3aaa30b0ac1d920ebdfe22eaae7f}
+Initializes the runtime environment. \hypertarget{class_twig___environment_a7ba43ac4c9bdd0aefcd5140e4ea87a08}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!is\+Auto\+Reload@{is\+Auto\+Reload}}
+\index{is\+Auto\+Reload@{is\+Auto\+Reload}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{is\+Auto\+Reload}]{\setlength{\rightskip}{0pt plus 5cm}is\+Auto\+Reload (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a7ba43ac4c9bdd0aefcd5140e4ea87a08}
+Checks if the auto\+\_\+reload option is enabled.
+
+\begin{DoxyReturn}{Returns}
+bool true if auto\+\_\+reload is enabled, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a017d21b4d0e1ee6f9cdd9d805793f076}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!is\+Debug@{is\+Debug}}
+\index{is\+Debug@{is\+Debug}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{is\+Debug}]{\setlength{\rightskip}{0pt plus 5cm}is\+Debug (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a017d21b4d0e1ee6f9cdd9d805793f076}
+Checks if debug mode is enabled.
+
+\begin{DoxyReturn}{Returns}
+bool true if debug mode is enabled, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_ab39d5897ee5022ecc92032d769b9c60c}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!is\+Strict\+Variables@{is\+Strict\+Variables}}
+\index{is\+Strict\+Variables@{is\+Strict\+Variables}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{is\+Strict\+Variables}]{\setlength{\rightskip}{0pt plus 5cm}is\+Strict\+Variables (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ab39d5897ee5022ecc92032d769b9c60c}
+Checks if the strict\+\_\+variables option is enabled.
+
+\begin{DoxyReturn}{Returns}
+bool true if strict\+\_\+variables is enabled, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a550e54bc7b1aaab7001854bfeea98f72}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!is\+Template\+Fresh@{is\+Template\+Fresh}}
+\index{is\+Template\+Fresh@{is\+Template\+Fresh}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{is\+Template\+Fresh}]{\setlength{\rightskip}{0pt plus 5cm}is\+Template\+Fresh (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$time}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a550e54bc7b1aaab7001854bfeea98f72}
+Returns true if the template is still fresh.
+
+Besides checking the loader for freshness information, this method also checks if the enabled extensions have not changed.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+int & {\em \$time} & The last modification time of the cached template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the template is fresh, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a0641874ee64bc25d356b609b6cda9700}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!load\+Template@{load\+Template}}
+\index{load\+Template@{load\+Template}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{load\+Template}]{\setlength{\rightskip}{0pt plus 5cm}load\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$index = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a0641874ee64bc25d356b609b6cda9700}
+Loads a template by name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+int & {\em \$index} & The index if it is an embedded template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___template_interface}{Twig\+\_\+\+Template\+Interface} A template instance representing the given template name
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When the template cannot be found \\
+\hline
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When an error occurred during compilation \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_a7e84fd2f4a105b68c7167060ae59b87d}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!merge\+Globals@{merge\+Globals}}
+\index{merge\+Globals@{merge\+Globals}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{merge\+Globals}]{\setlength{\rightskip}{0pt plus 5cm}merge\+Globals (
+\begin{DoxyParamCaption}
+\item[{array}]{\$context}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a7e84fd2f4a105b68c7167060ae59b87d}
+Merges a context with the defined globals.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$context} & An array representing the context\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The context merged with the globals 
+\end{DoxyReturn}
+\hypertarget{class_twig___environment_a1de4218ce9c025eaa18ce55616c98fe7}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!parse@{parse}}
+\index{parse@{parse}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Stream}}]{\$stream}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a1de4218ce9c025eaa18ce55616c98fe7}
+Converts a token stream to a node tree.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} & {\em \$stream} & A token stream instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___node___module}{Twig\+\_\+\+Node\+\_\+\+Module} A node tree
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When the token stream is syntactically or semantically wrong \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_a231cd85fca6feec29726a7b351baa112}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!remove\+Extension@{remove\+Extension}}
+\index{remove\+Extension@{remove\+Extension}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{remove\+Extension}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Extension (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a231cd85fca6feec29726a7b351baa112}
+Removes an extension by name.
+
+This method is deprecated and you should not use it.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The extension name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000002}{Deprecated}]since 1.\+12 (to be removed in 2.\+0) \end{DoxyRefDesc}
+\hypertarget{class_twig___environment_a8f5169d8953835c0a313d3a62344ce58}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!render@{render}}
+\index{render@{render}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}render (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{array}]{\$context = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a8f5169d8953835c0a313d3a62344ce58}
+Renders a template.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+array & {\em \$context} & An array of parameters to pass to the template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The rendered template
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When the template cannot be found \\
+\hline
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When an error occurred during compilation \\
+\hline
+{\em \hyperlink{class_twig___error___runtime}{Twig\+\_\+\+Error\+\_\+\+Runtime}} & When an error occurred during rendering \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_af1cc34fcbd8561be8a6075517d107630}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!resolve\+Template@{resolve\+Template}}
+\index{resolve\+Template@{resolve\+Template}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{resolve\+Template}]{\setlength{\rightskip}{0pt plus 5cm}resolve\+Template (
+\begin{DoxyParamCaption}
+\item[{}]{\$names}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_af1cc34fcbd8561be8a6075517d107630}
+Tries to load a template consecutively from an array.
+
+Similar to \hyperlink{class_twig___environment_a0641874ee64bc25d356b609b6cda9700}{load\+Template()} but it also accepts \hyperlink{interface_twig___template_interface}{Twig\+\_\+\+Template\+Interface} instances and an array of templates where each is tried to be loaded.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | \hyperlink{class_twig___template}{Twig\+\_\+\+Template} | array & {\em \$names} & A template or an array of templates to try consecutively\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___template}{Twig\+\_\+\+Template}
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When none of the templates can be found \\
+\hline
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When an error occurred during compilation \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___environment_a923e6b2ef89e647030c100214896548c}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Base\+Template\+Class@{set\+Base\+Template\+Class}}
+\index{set\+Base\+Template\+Class@{set\+Base\+Template\+Class}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Base\+Template\+Class}]{\setlength{\rightskip}{0pt plus 5cm}set\+Base\+Template\+Class (
+\begin{DoxyParamCaption}
+\item[{}]{\$class}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a923e6b2ef89e647030c100214896548c}
+Sets the base template class for compiled templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$class} & The base template class name \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a1bfa0b30d50d9ccce38cd1bcf2375109}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Cache@{set\+Cache}}
+\index{set\+Cache@{set\+Cache}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Cache}]{\setlength{\rightskip}{0pt plus 5cm}set\+Cache (
+\begin{DoxyParamCaption}
+\item[{}]{\$cache}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a1bfa0b30d50d9ccce38cd1bcf2375109}
+Sets the cache directory or false if cache is disabled.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | false & {\em \$cache} & The absolute path to the compiled templates, or false to disable cache \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a81ee11b0f5fadecaece55170fea54b29}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Charset@{set\+Charset}}
+\index{set\+Charset@{set\+Charset}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Charset}]{\setlength{\rightskip}{0pt plus 5cm}set\+Charset (
+\begin{DoxyParamCaption}
+\item[{}]{\$charset}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a81ee11b0f5fadecaece55170fea54b29}
+Sets the default template charset.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$charset} & The default charset \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a1dcd474337e99babac147ee2384353de}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Compiler@{set\+Compiler}}
+\index{set\+Compiler@{set\+Compiler}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Compiler}]{\setlength{\rightskip}{0pt plus 5cm}set\+Compiler (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Compiler\+Interface}}]{\$compiler}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a1dcd474337e99babac147ee2384353de}
+Sets the Compiler instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___compiler_interface}{Twig\+\_\+\+Compiler\+Interface} & {\em \$compiler} & A \hyperlink{interface_twig___compiler_interface}{Twig\+\_\+\+Compiler\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_ad226f4ce37612efcc6717bd592ca7b7d}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Extensions@{set\+Extensions}}
+\index{set\+Extensions@{set\+Extensions}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Extensions}]{\setlength{\rightskip}{0pt plus 5cm}set\+Extensions (
+\begin{DoxyParamCaption}
+\item[{array}]{\$extensions}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ad226f4ce37612efcc6717bd592ca7b7d}
+Registers an array of extensions.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$extensions} & An array of extensions \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_aee05c0d74c1194a030f13d7d2e3c1b6f}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Lexer@{set\+Lexer}}
+\index{set\+Lexer@{set\+Lexer}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Lexer}]{\setlength{\rightskip}{0pt plus 5cm}set\+Lexer (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Lexer\+Interface}}]{\$lexer}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_aee05c0d74c1194a030f13d7d2e3c1b6f}
+Sets the Lexer instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_twig___lexer_interface}{Twig\+\_\+\+Lexer\+Interface}} & A \hyperlink{interface_twig___lexer_interface}{Twig\+\_\+\+Lexer\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a7b2e6b9f72715d88eebb3ee0816057b4}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Loader@{set\+Loader}}
+\index{set\+Loader@{set\+Loader}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Loader}]{\setlength{\rightskip}{0pt plus 5cm}set\+Loader (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Loader\+Interface}}]{\$loader}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a7b2e6b9f72715d88eebb3ee0816057b4}
+Sets the Loader instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} & {\em \$loader} & A \hyperlink{interface_twig___loader_interface}{Twig\+\_\+\+Loader\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_ac16cd9a5f9db326226c01aa3ee943857}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!set\+Parser@{set\+Parser}}
+\index{set\+Parser@{set\+Parser}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{set\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}set\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_ac16cd9a5f9db326226c01aa3ee943857}
+Sets the Parser instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface}} & A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___environment_a69b81a225a371337d9854e72ec3f676d}{}\index{Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Twig\+\_\+\+Environment@{Twig\+\_\+\+Environment}}
+\subsubsection[{tokenize}]{\setlength{\rightskip}{0pt plus 5cm}tokenize (
+\begin{DoxyParamCaption}
+\item[{}]{\$source, }
+\item[{}]{\$name = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___environment_a69b81a225a371337d9854e72ec3f676d}
+Tokenizes a source code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$source} & The template source code \\
+\hline
+string & {\em \$name} & The template name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} A \hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} instance
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When the code is syntactically wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Environment.\+php\end{DoxyCompactItemize}

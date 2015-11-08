@@ -1,0 +1,99 @@
+\hypertarget{interface_twig___node_visitor_interface}{}\section{Twig\+\_\+\+Node\+Visitor\+Interface Interface Reference}
+\label{interface_twig___node_visitor_interface}\index{Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Node\+Visitor\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.032258cm]{interface_twig___node_visitor_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___node_visitor_interface_ad3bfee38f2bc56df9500da7f20b6e13a}{enter\+Node} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{interface_twig___node_visitor_interface_a436bb1ae16511148e860e5cfa2cad88f}{leave\+Node} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node, \hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hyperlink{interface_twig___node_visitor_interface_a1e7a3c168dcd0901a0d2669c67575b55}{get\+Priority} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} is the interface the all node visitor classes must implement.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___node_visitor_interface_ad3bfee38f2bc56df9500da7f20b6e13a}{}\index{Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}!enter\+Node@{enter\+Node}}
+\index{enter\+Node@{enter\+Node}!Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}}
+\subsubsection[{enter\+Node}]{\setlength{\rightskip}{0pt plus 5cm}enter\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)}\label{interface_twig___node_visitor_interface_ad3bfee38f2bc56df9500da7f20b6e13a}
+Called before child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} The modified node 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___node_visitor___optimizer_ad3bfee38f2bc56df9500da7f20b6e13a}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Optimizer}, \hyperlink{class_twig___node_visitor___safe_analysis_ad3bfee38f2bc56df9500da7f20b6e13a}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Safe\+Analysis}, \hyperlink{class_twig___node_visitor___escaper_ad3bfee38f2bc56df9500da7f20b6e13a}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Escaper}, \hyperlink{class_twig___node_visitor___sandbox_ad3bfee38f2bc56df9500da7f20b6e13a}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Sandbox}, and \hyperlink{class_twig___profiler___node_visitor___profiler_ad3bfee38f2bc56df9500da7f20b6e13a}{Twig\+\_\+\+Profiler\+\_\+\+Node\+Visitor\+\_\+\+Profiler}.
+
+\hypertarget{interface_twig___node_visitor_interface_a1e7a3c168dcd0901a0d2669c67575b55}{}\index{Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}!get\+Priority@{get\+Priority}}
+\index{get\+Priority@{get\+Priority}!Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}}
+\subsubsection[{get\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}get\+Priority (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___node_visitor_interface_a1e7a3c168dcd0901a0d2669c67575b55}
+Returns the priority for this visitor.
+
+Priority should be between -\/10 and 10 (0 is the default).
+
+\begin{DoxyReturn}{Returns}
+int The priority level 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___node_visitor___optimizer_a1e7a3c168dcd0901a0d2669c67575b55}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Optimizer}, \hyperlink{class_twig___node_visitor___escaper_a1e7a3c168dcd0901a0d2669c67575b55}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Escaper}, \hyperlink{class_twig___node_visitor___safe_analysis_a1e7a3c168dcd0901a0d2669c67575b55}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Safe\+Analysis}, \hyperlink{class_twig___node_visitor___sandbox_a1e7a3c168dcd0901a0d2669c67575b55}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Sandbox}, and \hyperlink{class_twig___profiler___node_visitor___profiler_a1e7a3c168dcd0901a0d2669c67575b55}{Twig\+\_\+\+Profiler\+\_\+\+Node\+Visitor\+\_\+\+Profiler}.
+
+\hypertarget{interface_twig___node_visitor_interface_a436bb1ae16511148e860e5cfa2cad88f}{}\index{Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}!leave\+Node@{leave\+Node}}
+\index{leave\+Node@{leave\+Node}!Twig\+\_\+\+Node\+Visitor\+Interface@{Twig\+\_\+\+Node\+Visitor\+Interface}}
+\subsubsection[{leave\+Node}]{\setlength{\rightskip}{0pt plus 5cm}leave\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)}\label{interface_twig___node_visitor_interface_a436bb1ae16511148e860e5cfa2cad88f}
+Called after child nodes are visited.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to visit \\
+\hline
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} & {\em \$env} & The Twig environment instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Twig\+\_\+\+Node\+Interface$\vert$false The modified node or false if the node must be removed 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___node_visitor___optimizer_a436bb1ae16511148e860e5cfa2cad88f}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Optimizer}, \hyperlink{class_twig___node_visitor___sandbox_a436bb1ae16511148e860e5cfa2cad88f}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Sandbox}, \hyperlink{class_twig___node_visitor___escaper_a436bb1ae16511148e860e5cfa2cad88f}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Escaper}, \hyperlink{class_twig___node_visitor___safe_analysis_a436bb1ae16511148e860e5cfa2cad88f}{Twig\+\_\+\+Node\+Visitor\+\_\+\+Safe\+Analysis}, and \hyperlink{class_twig___profiler___node_visitor___profiler_a436bb1ae16511148e860e5cfa2cad88f}{Twig\+\_\+\+Profiler\+\_\+\+Node\+Visitor\+\_\+\+Profiler}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Node\+Visitor\+Interface.\+php\end{DoxyCompactItemize}

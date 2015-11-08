@@ -1,0 +1,305 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: ClassName
+%%Creator: Doxygen
+%%CreationDate: Time
+%%For: 
+%Magnification: 1.00
+%%Orientation: Portrait
+%%BoundingBox: 0 0 500 500.894454
+%%Pages: 0
+%%BeginSetup
+%%EndSetup
+%%EndComments
+
+% ----- variables -----
+
+/boxwidth 0 def
+/boxheight 40 def
+/fontheight 24 def
+/marginwidth 10 def
+/distx 20 def
+/disty 40 def
+/boundaspect 0.998214 def  % aspect ratio of the BoundingBox (width/height)
+/boundx 500 def
+/boundy boundx boundaspect div def
+/xspacing 0 def
+/yspacing 0 def
+/rows 28 def
+/cols 2 def
+/scalefactor 0 def
+/boxfont /Times-Roman findfont fontheight scalefont def
+
+% ----- procedures -----
+
+/dotted { [1 4] 0 setdash } def
+/dashed { [5] 0 setdash } def
+/solid  { [] 0 setdash } def
+
+/max % result = MAX(arg1,arg2)
+{
+  /a exch def
+  /b exch def
+  a b gt {a} {b} ifelse
+} def
+
+/xoffset % result = MAX(0,(scalefactor-(boxwidth*cols+distx*(cols-1)))/2)
+{
+  0 scalefactor boxwidth cols mul distx cols 1 sub mul add sub 2 div max
+} def
+
+/cw % boxwidth = MAX(boxwidth, stringwidth(arg1))
+{
+  /str exch def
+  /boxwidth boxwidth str stringwidth pop max def
+} def
+
+/box % draws a box with text `arg1' at grid pos (arg2,arg3)
+{ gsave
+  2 setlinewidth
+  newpath
+  exch xspacing mul xoffset add
+  exch yspacing mul
+  moveto
+  boxwidth 0 rlineto 
+  0 boxheight rlineto 
+  boxwidth neg 0 rlineto 
+  0 boxheight neg rlineto 
+  closepath
+  dup stringwidth pop neg boxwidth add 2 div
+  boxheight fontheight 2 div sub 2 div
+  rmoveto show stroke
+  grestore
+} def  
+
+/mark
+{ newpath
+  exch xspacing mul xoffset add boxwidth add
+  exch yspacing mul
+  moveto
+  0 boxheight 4 div rlineto
+  boxheight neg 4 div boxheight neg 4 div rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/arrow
+{ newpath
+  moveto
+  3 -8 rlineto
+  -6 0 rlineto
+  3 8 rlineto
+  closepath
+  eofill
+  stroke
+} def
+
+/out % draws an output connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight add
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto 
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/in % draws an input connector for the block at (arg1,arg2)
+{
+  newpath
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul disty 2 div sub
+  /y exch def
+  /x exch def
+  x y moveto
+  0 disty 2 div rlineto
+  stroke
+  1 eq { x y disty 2 div add arrow } if
+} def
+
+/hedge
+{
+  exch xspacing mul xoffset add boxwidth 2 div add
+  exch yspacing mul boxheight 2 div sub
+  /y exch def
+  /x exch def
+  newpath
+  x y moveto
+  boxwidth 2 div distx add 0 rlineto
+  stroke
+  1 eq
+  { newpath x boxwidth 2 div distx add add y moveto
+    -8 3 rlineto
+    0 -6 rlineto
+    8 3 rlineto
+    closepath
+    eofill
+    stroke
+  } if
+} def
+
+/vedge
+{
+  /ye exch def
+  /ys exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add dup
+  ys yspacing mul boxheight 2 div sub
+  moveto
+  ye yspacing mul boxheight 2 div sub
+  lineto
+  stroke
+} def
+
+/conn % connections the blocks from col `arg1' to `arg2' of row `arg3'
+{
+  /ys exch def
+  /xe exch def
+  /xs exch def
+  newpath
+  xs xspacing mul xoffset add boxwidth 2 div add
+  ys yspacing mul disty 2 div sub
+  moveto
+  xspacing xe xs sub mul 0
+  rlineto
+  stroke
+} def
+
+% ----- main ------
+
+boxfont setfont
+1 boundaspect scale
+(Twig_TemplateInterface) cw
+(Twig_Template) cw
+(__TwigTemplate_0275d22b8db3efba6fadb9475e55bea6887f8c619dcd80f0ad5d363b2043df2e) cw
+(__TwigTemplate_05bde07f6b8dd4d05057361cad3fa578a893b04a4c1c4cd04e6801b44dc157df) cw
+(__TwigTemplate_11abe1dd7a064b3d8d4f31b6057717b46056d595e47a77e6b74fd1e6cdb67f32) cw
+(__TwigTemplate_1230a5cd7913bade7bde4de79f51bf3eaf4b41272ccf15f4539265ec3a18797e) cw
+(__TwigTemplate_15fe09d64814dffe8450cc894f2f713fe4c3afdb294e4f00fd7fc96a3f669701) cw
+(__TwigTemplate_22561716e266dcf2071434a0d71ed905e58e71caeeecaa104f5f7ef562be2f17) cw
+(__TwigTemplate_25164707a713f72b6ddc0544c382a12be28acea1102e10c7b69bc6465f021661) cw
+(__TwigTemplate_2fa1efe222b8860ae6492006cbe422602fae5aa1378476119a794baf030ba616) cw
+(__TwigTemplate_30c86dcbad2910037a9129efc2f6b95eb38b38f41feecbabad488996f10d8d2a) cw
+(__TwigTemplate_48a3423e78439f45b9dd1e1e06f8528972a50d329fd2ad822d4f54eddbf64459) cw
+(__TwigTemplate_52f09b53901ba6a210149468305b6d09b9ca6d97b717b800c182ef58a158a152) cw
+(__TwigTemplate_60539d993dc200268c2941a61f8947cb36a2560a63a7f578cba7c2cded789ce1) cw
+(__TwigTemplate_6597729f2677d6c14fbc80b579ed8b3eeecc13132195330bcea57f0a6fe652f5) cw
+(__TwigTemplate_681fa6d1d30e85a29386d419a75d6617c82fc261fd91a0ff77af0a5f00dd27ee) cw
+(__TwigTemplate_6fbc1c2385c7d84064c249105f634f9ea73b32b000b7b1074827e0d16a79a271) cw
+(__TwigTemplate_754f83a4e690fa95e412ce0021dd0b53343ac63d6f2bd49b1ba7c2d9ab77b917) cw
+(__TwigTemplate_82a0afaf8245d85fdbf0fc18f32598ec8c38ac03ff5b5b8daf3824fc01c910a2) cw
+(__TwigTemplate_93f376ce5790fb9bffa1302f1089c6bf16999d2478f0c92e7d5540ba41480433) cw
+(__TwigTemplate_abe207b196f248c9d45e7613939f981e1f20b16b706375267c01c81295a2e314) cw
+(__TwigTemplate_c52a368d89f33958b0a58c301d5816a5f3d4ff9db5b3c2e7ceed7701f5315708) cw
+(__TwigTemplate_cf9a3dba9181b24237ecf3a693bfd7b7e4ad0235c7381de0bd28136ed6ba0aa0) cw
+(__TwigTemplate_d48ef70295918b7a81857f02cff100c2f77ac8865397ffa62e8db53180f37f1c) cw
+(__TwigTemplate_d9d7130ac2710964c21267e708e397c8983999f50a981b019f94a5c4ab4f5270) cw
+(__TwigTemplate_dc440ac530df574fb0d7631ef2d7395680aca5a5bff55fa357577496f584522a) cw
+(__TwigTemplate_f96203f3345aa21a08d4f42a3e2fab487674bcd4735ecf754c87f5df3e886062) cw
+(__TwigTemplate_feb2169966ffda6fca1a12d5827e1f52fc51deffdcb7bd191e5a959530c8dca9) cw
+/boxwidth boxwidth marginwidth 2 mul add def
+/xspacing boxwidth distx add def
+/yspacing boxheight disty add def
+/scalefactor 
+  boxwidth cols mul distx cols 1 sub mul add
+  boxheight rows mul disty rows 1 sub mul add boundaspect mul 
+  max def
+boundx scalefactor div boundy scalefactor div scale
+
+% ----- classes -----
+
+ (Twig_TemplateInterface) 0.000000 27.000000 box
+ (Twig_Template) 0.000000 26.000000 box
+ (__TwigTemplate_0275d22b8db3efba6fadb9475e55bea6887f8c619dcd80f0ad5d363b2043df2e) 1.000000 25.000000 box
+ (__TwigTemplate_05bde07f6b8dd4d05057361cad3fa578a893b04a4c1c4cd04e6801b44dc157df) 1.000000 24.000000 box
+ (__TwigTemplate_11abe1dd7a064b3d8d4f31b6057717b46056d595e47a77e6b74fd1e6cdb67f32) 1.000000 23.000000 box
+ (__TwigTemplate_1230a5cd7913bade7bde4de79f51bf3eaf4b41272ccf15f4539265ec3a18797e) 1.000000 22.000000 box
+ (__TwigTemplate_15fe09d64814dffe8450cc894f2f713fe4c3afdb294e4f00fd7fc96a3f669701) 1.000000 21.000000 box
+ (__TwigTemplate_22561716e266dcf2071434a0d71ed905e58e71caeeecaa104f5f7ef562be2f17) 1.000000 20.000000 box
+ (__TwigTemplate_25164707a713f72b6ddc0544c382a12be28acea1102e10c7b69bc6465f021661) 1.000000 19.000000 box
+ (__TwigTemplate_2fa1efe222b8860ae6492006cbe422602fae5aa1378476119a794baf030ba616) 1.000000 18.000000 box
+ (__TwigTemplate_30c86dcbad2910037a9129efc2f6b95eb38b38f41feecbabad488996f10d8d2a) 1.000000 17.000000 box
+ (__TwigTemplate_48a3423e78439f45b9dd1e1e06f8528972a50d329fd2ad822d4f54eddbf64459) 1.000000 16.000000 box
+ (__TwigTemplate_52f09b53901ba6a210149468305b6d09b9ca6d97b717b800c182ef58a158a152) 1.000000 15.000000 box
+ (__TwigTemplate_60539d993dc200268c2941a61f8947cb36a2560a63a7f578cba7c2cded789ce1) 1.000000 14.000000 box
+ (__TwigTemplate_6597729f2677d6c14fbc80b579ed8b3eeecc13132195330bcea57f0a6fe652f5) 1.000000 13.000000 box
+ (__TwigTemplate_681fa6d1d30e85a29386d419a75d6617c82fc261fd91a0ff77af0a5f00dd27ee) 1.000000 12.000000 box
+ (__TwigTemplate_6fbc1c2385c7d84064c249105f634f9ea73b32b000b7b1074827e0d16a79a271) 1.000000 11.000000 box
+ (__TwigTemplate_754f83a4e690fa95e412ce0021dd0b53343ac63d6f2bd49b1ba7c2d9ab77b917) 1.000000 10.000000 box
+ (__TwigTemplate_82a0afaf8245d85fdbf0fc18f32598ec8c38ac03ff5b5b8daf3824fc01c910a2) 1.000000 9.000000 box
+ (__TwigTemplate_93f376ce5790fb9bffa1302f1089c6bf16999d2478f0c92e7d5540ba41480433) 1.000000 8.000000 box
+ (__TwigTemplate_abe207b196f248c9d45e7613939f981e1f20b16b706375267c01c81295a2e314) 1.000000 7.000000 box
+ (__TwigTemplate_c52a368d89f33958b0a58c301d5816a5f3d4ff9db5b3c2e7ceed7701f5315708) 1.000000 6.000000 box
+ (__TwigTemplate_cf9a3dba9181b24237ecf3a693bfd7b7e4ad0235c7381de0bd28136ed6ba0aa0) 1.000000 5.000000 box
+ (__TwigTemplate_d48ef70295918b7a81857f02cff100c2f77ac8865397ffa62e8db53180f37f1c) 1.000000 4.000000 box
+ (__TwigTemplate_d9d7130ac2710964c21267e708e397c8983999f50a981b019f94a5c4ab4f5270) 1.000000 3.000000 box
+ (__TwigTemplate_dc440ac530df574fb0d7631ef2d7395680aca5a5bff55fa357577496f584522a) 1.000000 2.000000 box
+ (__TwigTemplate_f96203f3345aa21a08d4f42a3e2fab487674bcd4735ecf754c87f5df3e886062) 1.000000 1.000000 box
+ (__TwigTemplate_feb2169966ffda6fca1a12d5827e1f52fc51deffdcb7bd191e5a959530c8dca9) 1.000000 0.000000 box
+
+% ----- relations -----
+
+solid
+1 0.000000 26.250000 out
+solid
+0 0.000000 26.750000 in
+solid
+1 0.000000 25.250000 out
+solid
+0 0.000000 25.500000 hedge
+solid
+0 0.000000 24.500000 hedge
+solid
+0 0.000000 23.500000 hedge
+solid
+0 0.000000 22.500000 hedge
+solid
+0 0.000000 21.500000 hedge
+solid
+0 0.000000 20.500000 hedge
+solid
+0 0.000000 19.500000 hedge
+solid
+0 0.000000 18.500000 hedge
+solid
+0 0.000000 17.500000 hedge
+solid
+0 0.000000 16.500000 hedge
+solid
+0 0.000000 15.500000 hedge
+solid
+0 0.000000 14.500000 hedge
+solid
+0 0.000000 13.500000 hedge
+solid
+0 0.000000 12.500000 hedge
+solid
+0 0.000000 11.500000 hedge
+solid
+0 0.000000 10.500000 hedge
+solid
+0 0.000000 9.500000 hedge
+solid
+0 0.000000 8.500000 hedge
+solid
+0 0.000000 7.500000 hedge
+solid
+0 0.000000 6.500000 hedge
+solid
+0 0.000000 5.500000 hedge
+solid
+0 0.000000 4.500000 hedge
+solid
+0 0.000000 3.500000 hedge
+solid
+0 0.000000 2.500000 hedge
+solid
+0 0.000000 1.500000 hedge
+solid
+0 0.000000 0.500000 hedge
+solid
+0.000000 26.000000 0.500000 vedge

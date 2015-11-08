@@ -1,0 +1,92 @@
+\hypertarget{class_twig___node_traverser}{}\section{Twig\+\_\+\+Node\+Traverser Class Reference}
+\label{class_twig___node_traverser}\index{Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___node_traverser_abfc6550d22500c2fd6e9df3364b90503}{\+\_\+\+\_\+construct} (\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} \$env, array \$visitors=array())
+\item 
+\hyperlink{class_twig___node_traverser_a3a90d966767b0b5dfd3439b6240ad547}{add\+Visitor} (\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} \$visitor)
+\item 
+\hyperlink{class_twig___node_traverser_a825bac4a4ce64a5a5213f9599196e7f4}{traverse} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___node_traverser_acd52b9b58ba0f5d931ef7a074e87c7bb}{}{\bfseries traverse\+For\+Visitor} (\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} \$visitor, \hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node=null)\label{class_twig___node_traverser_acd52b9b58ba0f5d931ef7a074e87c7bb}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___node_traverser_aa99ce9ae015e958eef5782267276fbb4}{}{\bfseries \$env}\label{class_twig___node_traverser_aa99ce9ae015e958eef5782267276fbb4}
+
+\item 
+\hypertarget{class_twig___node_traverser_a63a73490fa0428629a602fd9042a95aa}{}{\bfseries \$visitors}\label{class_twig___node_traverser_a63a73490fa0428629a602fd9042a95aa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_twig___node_traverser}{Twig\+\_\+\+Node\+Traverser} is a node traverser.
+
+It visits all nodes and their children and calls the given visitor for each.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___node_traverser_abfc6550d22500c2fd6e9df3364b90503}{}\index{Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env, }
+\item[{array}]{\$visitors = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_traverser_abfc6550d22500c2fd6e9df3364b90503}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} & {\em \$env} & A \hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} instance \\
+\hline
+ & {\em Twig\+\_\+\+Node\+Visitor\+Interface\mbox{[}$\,$\mbox{]}} & \$visitors An array of \hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} instances \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___node_traverser_a3a90d966767b0b5dfd3439b6240ad547}{}\index{Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}!add\+Visitor@{add\+Visitor}}
+\index{add\+Visitor@{add\+Visitor}!Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}}
+\subsubsection[{add\+Visitor}]{\setlength{\rightskip}{0pt plus 5cm}add\+Visitor (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Visitor\+Interface}}]{\$visitor}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_traverser_a3a90d966767b0b5dfd3439b6240ad547}
+Adds a visitor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} & {\em \$visitor} & A \hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___node_traverser_a825bac4a4ce64a5a5213f9599196e7f4}{}\index{Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}!traverse@{traverse}}
+\index{traverse@{traverse}!Twig\+\_\+\+Node\+Traverser@{Twig\+\_\+\+Node\+Traverser}}
+\subsubsection[{traverse}]{\setlength{\rightskip}{0pt plus 5cm}traverse (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_traverser_a825bac4a4ce64a5a5213f9599196e7f4}
+Traverses a node and calls the registered visitors.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & A \hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} instance \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Node\+Traverser.\+php\end{DoxyCompactItemize}

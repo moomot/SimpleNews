@@ -1,0 +1,193 @@
+\hypertarget{class_twig___token_parser_broker}{}\section{Twig\+\_\+\+Token\+Parser\+Broker Class Reference}
+\label{class_twig___token_parser_broker}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+Inheritance diagram for Twig\+\_\+\+Token\+Parser\+Broker\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig___token_parser_broker}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___token_parser_broker_a5378f462d594396faab17d015277cb1d}{\+\_\+\+\_\+construct} (\$parsers=array(), \$brokers=array())
+\item 
+\hyperlink{class_twig___token_parser_broker_a8f805d29eac2b8ce1da513e9390952f3}{add\+Token\+Parser} (\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} \$parser)
+\item 
+\hyperlink{class_twig___token_parser_broker_aa4402c2e54d4c1a7b89b175084465045}{remove\+Token\+Parser} (\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} \$parser)
+\item 
+\hyperlink{class_twig___token_parser_broker_a4d48ade56aed5a989f6fe4cf7e40017b}{add\+Token\+Parser\+Broker} (\hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} \$broker)
+\item 
+\hyperlink{class_twig___token_parser_broker_a8089187f9f7ad48dac1e6ebe7efdb8ba}{remove\+Token\+Parser\+Broker} (\hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} \$broker)
+\item 
+\hyperlink{class_twig___token_parser_broker_adff2d8a3b28dce12e0bccd335af4012f}{get\+Token\+Parser} (\$tag)
+\item 
+\hypertarget{class_twig___token_parser_broker_a79cfaa4562ab2e470afc52c22acd1917}{}{\bfseries get\+Parsers} ()\label{class_twig___token_parser_broker_a79cfaa4562ab2e470afc52c22acd1917}
+
+\item 
+\hyperlink{class_twig___token_parser_broker_a4b6907ea868dc9053e1f7d6260fa4b4f}{get\+Parser} ()
+\item 
+\hyperlink{class_twig___token_parser_broker_ac16cd9a5f9db326226c01aa3ee943857}{set\+Parser} (\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} \$parser)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___token_parser_broker_a147a766daa03d52576c7345fea31c945}{}{\bfseries \$parser}\label{class_twig___token_parser_broker_a147a766daa03d52576c7345fea31c945}
+
+\item 
+\hypertarget{class_twig___token_parser_broker_ae7df9b3add8c1b302615fc85fbd27de0}{}{\bfseries \$parsers} = array()\label{class_twig___token_parser_broker_ae7df9b3add8c1b302615fc85fbd27de0}
+
+\item 
+\hypertarget{class_twig___token_parser_broker_a5cd4d3909a056e1cf2d0c68d5d7a89f5}{}{\bfseries \$brokers} = array()\label{class_twig___token_parser_broker_a5cd4d3909a056e1cf2d0c68d5d7a89f5}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Default implementation of a token parser broker.
+
+\begin{DoxyAuthor}{Author}
+Arnaud Le Blanc \href{mailto:arnaud.lb@gmail.com}{\tt arnaud.\+lb@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000027}{Deprecated}]since 1.\+12 (to be removed in 2.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___token_parser_broker_a5378f462d594396faab17d015277cb1d}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$parsers = {\ttfamily array()}, }
+\item[{}]{\$brokers = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_a5378f462d594396faab17d015277cb1d}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array | Traversable & {\em \$parsers} & A Traversable of \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} instances \\
+\hline
+array | Traversable & {\em \$brokers} & A Traversable of \hyperlink{interface_twig___token_parser_broker_interface}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface} instances \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___token_parser_broker_a8f805d29eac2b8ce1da513e9390952f3}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!add\+Token\+Parser@{add\+Token\+Parser}}
+\index{add\+Token\+Parser@{add\+Token\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{add\+Token\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}add\+Token\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_a8f805d29eac2b8ce1da513e9390952f3}
+Adds a Token\+Parser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} & {\em \$parser} & A \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___token_parser_broker_a4d48ade56aed5a989f6fe4cf7e40017b}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!add\+Token\+Parser\+Broker@{add\+Token\+Parser\+Broker}}
+\index{add\+Token\+Parser\+Broker@{add\+Token\+Parser\+Broker}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{add\+Token\+Parser\+Broker}]{\setlength{\rightskip}{0pt plus 5cm}add\+Token\+Parser\+Broker (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Parser\+Broker}}]{\$broker}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_a4d48ade56aed5a989f6fe4cf7e40017b}
+Adds a Token\+Parser\+Broker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} & {\em \$broker} & A \hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___token_parser_broker_a4b6907ea868dc9053e1f7d6260fa4b4f}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!get\+Parser@{get\+Parser}}
+\index{get\+Parser@{get\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{get\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_a4b6907ea868dc9053e1f7d6260fa4b4f}
+Gets the \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface}.
+
+\begin{DoxyReturn}{Returns}
+null$\vert$\+Twig\+\_\+\+Parser\+Interface A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} instance or null 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_twig___token_parser_broker_interface_a4b6907ea868dc9053e1f7d6260fa4b4f}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}.
+
+\hypertarget{class_twig___token_parser_broker_adff2d8a3b28dce12e0bccd335af4012f}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!get\+Token\+Parser@{get\+Token\+Parser}}
+\index{get\+Token\+Parser@{get\+Token\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{get\+Token\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token\+Parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_adff2d8a3b28dce12e0bccd335af4012f}
+Gets a suitable Token\+Parser for a tag.
+
+First looks in parsers, then in brokers.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & A tag name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$\+Twig\+\_\+\+Token\+Parser\+Interface A \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} or null if no suitable Token\+Parser was found 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_twig___token_parser_broker_interface_adff2d8a3b28dce12e0bccd335af4012f}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}.
+
+\hypertarget{class_twig___token_parser_broker_aa4402c2e54d4c1a7b89b175084465045}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!remove\+Token\+Parser@{remove\+Token\+Parser}}
+\index{remove\+Token\+Parser@{remove\+Token\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{remove\+Token\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Token\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_aa4402c2e54d4c1a7b89b175084465045}
+Removes a Token\+Parser.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} & {\em \$parser} & A \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___token_parser_broker_a8089187f9f7ad48dac1e6ebe7efdb8ba}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!remove\+Token\+Parser\+Broker@{remove\+Token\+Parser\+Broker}}
+\index{remove\+Token\+Parser\+Broker@{remove\+Token\+Parser\+Broker}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{remove\+Token\+Parser\+Broker}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Token\+Parser\+Broker (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Parser\+Broker}}]{\$broker}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_a8089187f9f7ad48dac1e6ebe7efdb8ba}
+Removes a Token\+Parser\+Broker.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} & {\em \$broker} & A \hyperlink{class_twig___token_parser_broker}{Twig\+\_\+\+Token\+Parser\+Broker} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___token_parser_broker_ac16cd9a5f9db326226c01aa3ee943857}{}\index{Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}!set\+Parser@{set\+Parser}}
+\index{set\+Parser@{set\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker@{Twig\+\_\+\+Token\+Parser\+Broker}}
+\subsubsection[{set\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}set\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser_broker_ac16cd9a5f9db326226c01aa3ee943857}
+Calls \hyperlink{interface_twig___token_parser_interface_a68fca2cbecd7ee6643879ae3d5c6f129}{Twig\+\_\+\+Token\+Parser\+Interface\+::set\+Parser} on all parsers the implementation knows of.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} & {\em \$parser} & A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} interface \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_twig___token_parser_broker_interface_ac16cd9a5f9db326226c01aa3ee943857}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Token\+Parser\+Broker.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,264 @@
+\hypertarget{class_twig___node}{}\section{Twig\+\_\+\+Node Class Reference}
+\label{class_twig___node}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+Inheritance diagram for Twig\+\_\+\+Node\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{class_twig___node}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___node_a1aa1f1818967a7b79c84c6a2c795ccd8}{\+\_\+\+\_\+construct} (array \$nodes=array(), array \$attributes=array(), \$lineno=0, \$tag=null)
+\item 
+\hypertarget{class_twig___node_a7516ca30af0db3cdbf9a7739b48ce91d}{}{\bfseries \+\_\+\+\_\+to\+String} ()\label{class_twig___node_a7516ca30af0db3cdbf9a7739b48ce91d}
+
+\item 
+\hyperlink{class_twig___node_a8ef6547f4e489ba6353e4d96ec48e7a8}{to\+Xml} (\$as\+Dom=false)
+\item 
+\hyperlink{class_twig___node_a4e0faa87c3fae583620b84d3607085da}{compile} (\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} \$compiler)
+\item 
+\hypertarget{class_twig___node_aef9c32f6066788a101028a1d4150f8cb}{}{\bfseries get\+Line} ()\label{class_twig___node_aef9c32f6066788a101028a1d4150f8cb}
+
+\item 
+\hypertarget{class_twig___node_ade3006d746f2e1ba1df08da2d613a632}{}{\bfseries get\+Node\+Tag} ()\label{class_twig___node_ade3006d746f2e1ba1df08da2d613a632}
+
+\item 
+\hyperlink{class_twig___node_ac78ba27a41d0291c61326022489d4986}{has\+Attribute} (\$name)
+\item 
+\hyperlink{class_twig___node_ae954da422d40fc286691e54679e44c6f}{get\+Attribute} (\$name)
+\item 
+\hyperlink{class_twig___node_a545f43e4d937e0e272a4bafe8b411d55}{set\+Attribute} (\$name, \$value)
+\item 
+\hyperlink{class_twig___node_abbf04707cf678979459a4438e1450876}{remove\+Attribute} (\$name)
+\item 
+\hyperlink{class_twig___node_a4cc984156551609a68bf36368dca7f6b}{has\+Node} (\$name)
+\item 
+\hyperlink{class_twig___node_a071882cdcc51912c1025915e76680f42}{get\+Node} (\$name)
+\item 
+\hyperlink{class_twig___node_af59671ebefa5b3c066db692e05c80303}{set\+Node} (\$name, \$node=null)
+\item 
+\hyperlink{class_twig___node_a38ca670ed45c0c11aa8462f67f2ec7bd}{remove\+Node} (\$name)
+\item 
+\hypertarget{class_twig___node_ac751e87b3d4c4bf2feb03bee8b092755}{}{\bfseries count} ()\label{class_twig___node_ac751e87b3d4c4bf2feb03bee8b092755}
+
+\item 
+\hypertarget{class_twig___node_a7a9f937c2958e6f4dd7b030f86fb70b7}{}{\bfseries get\+Iterator} ()\label{class_twig___node_a7a9f937c2958e6f4dd7b030f86fb70b7}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___node_afc84f46342a660cca8589570197bc421}{}{\bfseries \$nodes}\label{class_twig___node_afc84f46342a660cca8589570197bc421}
+
+\item 
+\hypertarget{class_twig___node_adc851f7a62250e75df0490c0280aef4c}{}{\bfseries \$attributes}\label{class_twig___node_adc851f7a62250e75df0490c0280aef4c}
+
+\item 
+\hypertarget{class_twig___node_a865384ce49abf1c78f8aea48c7b5aa48}{}{\bfseries \$lineno}\label{class_twig___node_a865384ce49abf1c78f8aea48c7b5aa48}
+
+\item 
+\hypertarget{class_twig___node_a81d5015d41ed8ec66e9db8cdc5db9555}{}{\bfseries \$tag}\label{class_twig___node_a81d5015d41ed8ec66e9db8cdc5db9555}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a node in the A\+S\+T.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___node_a1aa1f1818967a7b79c84c6a2c795ccd8}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{array}]{\$nodes = {\ttfamily array()}, }
+\item[{array}]{\$attributes = {\ttfamily array()}, }
+\item[{}]{\$lineno = {\ttfamily 0}, }
+\item[{}]{\$tag = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a1aa1f1818967a7b79c84c6a2c795ccd8}
+Constructor.
+
+The nodes are automatically made available as properties (\$this-\/$>$node). The attributes are automatically made available as array items (\$this\mbox{[}\textquotesingle{}name\textquotesingle{}\mbox{]}).
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$nodes} & An array of named nodes \\
+\hline
+array & {\em \$attributes} & An array of attributes (should not be nodes) \\
+\hline
+int & {\em \$lineno} & The line number \\
+\hline
+string & {\em \$tag} & The tag name associated with the Node \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___node_a4e0faa87c3fae583620b84d3607085da}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!compile@{compile}}
+\index{compile@{compile}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Compiler}}]{\$compiler}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a4e0faa87c3fae583620b84d3607085da}
+Compiles the node to P\+H\+P.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} & {\em \$compiler} & A \hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} instance \\
+\hline
+\end{DoxyParams}
+
+
+Implements \hyperlink{interface_twig___node_interface_a4e0faa87c3fae583620b84d3607085da}{Twig\+\_\+\+Node\+Interface}.
+
+\hypertarget{class_twig___node_ae954da422d40fc286691e54679e44c6f}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!get\+Attribute@{get\+Attribute}}
+\index{get\+Attribute@{get\+Attribute}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{get\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_ae954da422d40fc286691e54679e44c6f}
+Gets an attribute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The attribute name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+mixed The attribute value 
+\end{DoxyReturn}
+\hypertarget{class_twig___node_a071882cdcc51912c1025915e76680f42}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!get\+Node@{get\+Node}}
+\index{get\+Node@{get\+Node}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{get\+Node}]{\setlength{\rightskip}{0pt plus 5cm}get\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a071882cdcc51912c1025915e76680f42}
+Gets a node by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The node name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___node}{Twig\+\_\+\+Node} A \hyperlink{class_twig___node}{Twig\+\_\+\+Node} instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___node_ac78ba27a41d0291c61326022489d4986}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!has\+Attribute@{has\+Attribute}}
+\index{has\+Attribute@{has\+Attribute}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{has\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}has\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_ac78ba27a41d0291c61326022489d4986}
+Returns true if the attribute is defined.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The attribute name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the attribute is defined, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___node_a4cc984156551609a68bf36368dca7f6b}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!has\+Node@{has\+Node}}
+\index{has\+Node@{has\+Node}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{has\+Node}]{\setlength{\rightskip}{0pt plus 5cm}has\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a4cc984156551609a68bf36368dca7f6b}
+Returns true if the node with the given identifier exists.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The node name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the node with the given name exists, false otherwise 
+\end{DoxyReturn}
+\hypertarget{class_twig___node_abbf04707cf678979459a4438e1450876}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!remove\+Attribute@{remove\+Attribute}}
+\index{remove\+Attribute@{remove\+Attribute}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{remove\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_abbf04707cf678979459a4438e1450876}
+Removes an attribute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The attribute name \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___node_a38ca670ed45c0c11aa8462f67f2ec7bd}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!remove\+Node@{remove\+Node}}
+\index{remove\+Node@{remove\+Node}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{remove\+Node}]{\setlength{\rightskip}{0pt plus 5cm}remove\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a38ca670ed45c0c11aa8462f67f2ec7bd}
+Removes a node by name.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The node name \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___node_a545f43e4d937e0e272a4bafe8b411d55}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!set\+Attribute@{set\+Attribute}}
+\index{set\+Attribute@{set\+Attribute}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{set\+Attribute}]{\setlength{\rightskip}{0pt plus 5cm}set\+Attribute (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a545f43e4d937e0e272a4bafe8b411d55}
+Sets an attribute.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The attribute name \\
+\hline
+{\em mixed} & The attribute value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___node_af59671ebefa5b3c066db692e05c80303}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!set\+Node@{set\+Node}}
+\index{set\+Node@{set\+Node}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{set\+Node}]{\setlength{\rightskip}{0pt plus 5cm}set\+Node (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$node = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_af59671ebefa5b3c066db692e05c80303}
+Sets a node.
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & The node name \\
+\hline
+{\em \hyperlink{class_twig___node}{Twig\+\_\+\+Node}} & A \hyperlink{class_twig___node}{Twig\+\_\+\+Node} instance \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_twig___node_a8ef6547f4e489ba6353e4d96ec48e7a8}{}\index{Twig\+\_\+\+Node@{Twig\+\_\+\+Node}!to\+Xml@{to\+Xml}}
+\index{to\+Xml@{to\+Xml}!Twig\+\_\+\+Node@{Twig\+\_\+\+Node}}
+\subsubsection[{to\+Xml}]{\setlength{\rightskip}{0pt plus 5cm}to\+Xml (
+\begin{DoxyParamCaption}
+\item[{}]{\$as\+Dom = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_twig___node_a8ef6547f4e489ba6353e4d96ec48e7a8}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000017}{Deprecated}]since 1.\+16.\+1 (to be removed in 2.\+0) \end{DoxyRefDesc}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Node.\+php\end{DoxyCompactItemize}

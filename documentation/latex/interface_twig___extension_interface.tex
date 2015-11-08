@@ -1,0 +1,193 @@
+\hypertarget{interface_twig___extension_interface}{}\section{Twig\+\_\+\+Extension\+Interface Interface Reference}
+\label{interface_twig___extension_interface}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Extension\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=10.000000cm]{interface_twig___extension_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___extension_interface_ab17a2e5ce3e5789febe1f3a96e61ec38}{init\+Runtime} (\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} \$environment)
+\item 
+\hyperlink{interface_twig___extension_interface_a8fd35903c3d01c0f0078f59d142eb063}{get\+Token\+Parsers} ()
+\item 
+\hyperlink{interface_twig___extension_interface_aec02093179d390d22ae4083f23a1d74a}{get\+Node\+Visitors} ()
+\item 
+\hyperlink{interface_twig___extension_interface_a428d91319fc73d3038784cf5436936b6}{get\+Filters} ()
+\item 
+\hyperlink{interface_twig___extension_interface_a7e247dd31cc8d37a6c97353a062a0080}{get\+Tests} ()
+\item 
+\hyperlink{interface_twig___extension_interface_a131c2522f07821f77cd1d038c216031b}{get\+Functions} ()
+\item 
+\hyperlink{interface_twig___extension_interface_aeaf58da661970280d00b67c17dc4f8d4}{get\+Operators} ()
+\item 
+\hyperlink{interface_twig___extension_interface_ae3a26252ce6efe503698085a7ed69dad}{get\+Globals} ()
+\item 
+\hyperlink{interface_twig___extension_interface_a3d0963e68bb313b163a73f2803c64600}{get\+Name} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by extension classes.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___extension_interface_a428d91319fc73d3038784cf5436936b6}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Filters@{get\+Filters}}
+\index{get\+Filters@{get\+Filters}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Filters}]{\setlength{\rightskip}{0pt plus 5cm}get\+Filters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_a428d91319fc73d3038784cf5436936b6}
+Returns a list of filters to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of filters 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_a428d91319fc73d3038784cf5436936b6}{Twig\+\_\+\+Extension\+\_\+\+Core}, \hyperlink{class_twig___extension___staging_a428d91319fc73d3038784cf5436936b6}{Twig\+\_\+\+Extension\+\_\+\+Staging}, \hyperlink{class_twig___extension_a428d91319fc73d3038784cf5436936b6}{Twig\+\_\+\+Extension}, and \hyperlink{class_twig___extension___escaper_a428d91319fc73d3038784cf5436936b6}{Twig\+\_\+\+Extension\+\_\+\+Escaper}.
+
+\hypertarget{interface_twig___extension_interface_a131c2522f07821f77cd1d038c216031b}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Functions@{get\+Functions}}
+\index{get\+Functions@{get\+Functions}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Functions}]{\setlength{\rightskip}{0pt plus 5cm}get\+Functions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_a131c2522f07821f77cd1d038c216031b}
+Returns a list of functions to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of functions 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_a131c2522f07821f77cd1d038c216031b}{Twig\+\_\+\+Extension\+\_\+\+Core}, \hyperlink{class_twig___extension_a131c2522f07821f77cd1d038c216031b}{Twig\+\_\+\+Extension}, \hyperlink{class_twig___extension___staging_a131c2522f07821f77cd1d038c216031b}{Twig\+\_\+\+Extension\+\_\+\+Staging}, \hyperlink{class_twig___extension___debug_a131c2522f07821f77cd1d038c216031b}{Twig\+\_\+\+Extension\+\_\+\+Debug}, and \hyperlink{class_twig___extension___string_loader_a131c2522f07821f77cd1d038c216031b}{Twig\+\_\+\+Extension\+\_\+\+String\+Loader}.
+
+\hypertarget{interface_twig___extension_interface_ae3a26252ce6efe503698085a7ed69dad}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Globals@{get\+Globals}}
+\index{get\+Globals@{get\+Globals}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Globals}]{\setlength{\rightskip}{0pt plus 5cm}get\+Globals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_ae3a26252ce6efe503698085a7ed69dad}
+Returns a list of global variables to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of global variables 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension_ae3a26252ce6efe503698085a7ed69dad}{Twig\+\_\+\+Extension}, and \hyperlink{class_twig___extension___staging_ae3a26252ce6efe503698085a7ed69dad}{Twig\+\_\+\+Extension\+\_\+\+Staging}.
+
+\hypertarget{interface_twig___extension_interface_a3d0963e68bb313b163a73f2803c64600}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Name@{get\+Name}}
+\index{get\+Name@{get\+Name}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Name}]{\setlength{\rightskip}{0pt plus 5cm}get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_a3d0963e68bb313b163a73f2803c64600}
+Returns the name of the extension.
+
+\begin{DoxyReturn}{Returns}
+string The extension name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Core}, \hyperlink{class_twig___extension___staging_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Staging}, \hyperlink{class_twig___extension___sandbox_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Sandbox}, \hyperlink{class_twig___extension___escaper_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Escaper}, \hyperlink{class_twig___extension___profiler_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Profiler}, \hyperlink{class_twig___extension___debug_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Debug}, \hyperlink{class_twig___extension___optimizer_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+Optimizer}, and \hyperlink{class_twig___extension___string_loader_a3d0963e68bb313b163a73f2803c64600}{Twig\+\_\+\+Extension\+\_\+\+String\+Loader}.
+
+\hypertarget{interface_twig___extension_interface_aec02093179d390d22ae4083f23a1d74a}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Node\+Visitors@{get\+Node\+Visitors}}
+\index{get\+Node\+Visitors@{get\+Node\+Visitors}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Node\+Visitors}]{\setlength{\rightskip}{0pt plus 5cm}get\+Node\+Visitors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_aec02093179d390d22ae4083f23a1d74a}
+Returns the node visitor instances to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface}\mbox{[}\mbox{]} An array of \hyperlink{interface_twig___node_visitor_interface}{Twig\+\_\+\+Node\+Visitor\+Interface} instances 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___staging_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension\+\_\+\+Staging}, \hyperlink{class_twig___extension___profiler_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension\+\_\+\+Profiler}, \hyperlink{class_twig___extension_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension}, \hyperlink{class_twig___extension___sandbox_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension\+\_\+\+Sandbox}, \hyperlink{class_twig___extension___escaper_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension\+\_\+\+Escaper}, and \hyperlink{class_twig___extension___optimizer_aec02093179d390d22ae4083f23a1d74a}{Twig\+\_\+\+Extension\+\_\+\+Optimizer}.
+
+\hypertarget{interface_twig___extension_interface_aeaf58da661970280d00b67c17dc4f8d4}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Operators@{get\+Operators}}
+\index{get\+Operators@{get\+Operators}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Operators}]{\setlength{\rightskip}{0pt plus 5cm}get\+Operators (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_aeaf58da661970280d00b67c17dc4f8d4}
+Returns a list of operators to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of operators 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_aeaf58da661970280d00b67c17dc4f8d4}{Twig\+\_\+\+Extension\+\_\+\+Core}, and \hyperlink{class_twig___extension_aeaf58da661970280d00b67c17dc4f8d4}{Twig\+\_\+\+Extension}.
+
+\hypertarget{interface_twig___extension_interface_a7e247dd31cc8d37a6c97353a062a0080}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Tests@{get\+Tests}}
+\index{get\+Tests@{get\+Tests}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Tests}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tests (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_a7e247dd31cc8d37a6c97353a062a0080}
+Returns a list of tests to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of tests 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_a7e247dd31cc8d37a6c97353a062a0080}{Twig\+\_\+\+Extension\+\_\+\+Core}, \hyperlink{class_twig___extension___staging_a7e247dd31cc8d37a6c97353a062a0080}{Twig\+\_\+\+Extension\+\_\+\+Staging}, and \hyperlink{class_twig___extension_a7e247dd31cc8d37a6c97353a062a0080}{Twig\+\_\+\+Extension}.
+
+\hypertarget{interface_twig___extension_interface_a8fd35903c3d01c0f0078f59d142eb063}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!get\+Token\+Parsers@{get\+Token\+Parsers}}
+\index{get\+Token\+Parsers@{get\+Token\+Parsers}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{get\+Token\+Parsers}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token\+Parsers (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_a8fd35903c3d01c0f0078f59d142eb063}
+Returns the token parser instances to add to the existing list.
+
+\begin{DoxyReturn}{Returns}
+array An array of \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} or \hyperlink{interface_twig___token_parser_broker_interface}{Twig\+\_\+\+Token\+Parser\+Broker\+Interface} instances 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___extension___core_a8fd35903c3d01c0f0078f59d142eb063}{Twig\+\_\+\+Extension\+\_\+\+Core}, \hyperlink{class_twig___extension___staging_a8fd35903c3d01c0f0078f59d142eb063}{Twig\+\_\+\+Extension\+\_\+\+Staging}, \hyperlink{class_twig___extension_a8fd35903c3d01c0f0078f59d142eb063}{Twig\+\_\+\+Extension}, \hyperlink{class_twig___extension___sandbox_a8fd35903c3d01c0f0078f59d142eb063}{Twig\+\_\+\+Extension\+\_\+\+Sandbox}, and \hyperlink{class_twig___extension___escaper_a8fd35903c3d01c0f0078f59d142eb063}{Twig\+\_\+\+Extension\+\_\+\+Escaper}.
+
+\hypertarget{interface_twig___extension_interface_ab17a2e5ce3e5789febe1f3a96e61ec38}{}\index{Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}!init\+Runtime@{init\+Runtime}}
+\index{init\+Runtime@{init\+Runtime}!Twig\+\_\+\+Extension\+Interface@{Twig\+\_\+\+Extension\+Interface}}
+\subsubsection[{init\+Runtime}]{\setlength{\rightskip}{0pt plus 5cm}init\+Runtime (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$environment}
+\end{DoxyParamCaption}
+)}\label{interface_twig___extension_interface_ab17a2e5ce3e5789febe1f3a96e61ec38}
+Initializes the runtime environment.
+
+This is where you can load some file that contains filter functions for instance.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} & {\em \$environment} & The current \hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} instance \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_twig___extension_ab17a2e5ce3e5789febe1f3a96e61ec38}{Twig\+\_\+\+Extension}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Extension\+Interface.\+php\end{DoxyCompactItemize}

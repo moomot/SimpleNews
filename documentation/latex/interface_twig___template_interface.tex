@@ -1,0 +1,105 @@
+\hypertarget{interface_twig___template_interface}{}\section{Twig\+\_\+\+Template\+Interface Interface Reference}
+\label{interface_twig___template_interface}\index{Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Template\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_twig___template_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___template_interface_a09fce96a9866b9a2bcba80d611c0199c}{render} (array \$context)
+\item 
+\hyperlink{interface_twig___template_interface_a056b93bf930a9629d3a96234ce462f20}{display} (array \$context, array \$blocks=array())
+\item 
+\hyperlink{interface_twig___template_interface_a1a945689f9a90f9029d671ec32262d37}{get\+Environment} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{interface_twig___template_interface_afbad1c07ee4c5a6ab24612dd1e419c80}{}const {\bfseries A\+N\+Y\+\_\+\+C\+A\+L\+L} = \textquotesingle{}any\textquotesingle{}\label{interface_twig___template_interface_afbad1c07ee4c5a6ab24612dd1e419c80}
+
+\item 
+\hypertarget{interface_twig___template_interface_a3458e5e24f091e589f85fdf4e3f270d9}{}const {\bfseries A\+R\+R\+A\+Y\+\_\+\+C\+A\+L\+L} = \textquotesingle{}array\textquotesingle{}\label{interface_twig___template_interface_a3458e5e24f091e589f85fdf4e3f270d9}
+
+\item 
+\hypertarget{interface_twig___template_interface_a296b9e68df98717f0c552180d8770665}{}const {\bfseries M\+E\+T\+H\+O\+D\+\_\+\+C\+A\+L\+L} = \textquotesingle{}method\textquotesingle{}\label{interface_twig___template_interface_a296b9e68df98717f0c552180d8770665}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by all compiled templates.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000020}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___template_interface_a056b93bf930a9629d3a96234ce462f20}{}\index{Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}!display@{display}}
+\index{display@{display}!Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}}
+\subsubsection[{display}]{\setlength{\rightskip}{0pt plus 5cm}display (
+\begin{DoxyParamCaption}
+\item[{array}]{\$context, }
+\item[{array}]{\$blocks = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{interface_twig___template_interface_a056b93bf930a9629d3a96234ce462f20}
+Displays the template with the given context.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$context} & An array of parameters to pass to the template \\
+\hline
+array & {\em \$blocks} & An array of blocks to pass to the template \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_twig___template_a056b93bf930a9629d3a96234ce462f20}{Twig\+\_\+\+Template}.
+
+\hypertarget{interface_twig___template_interface_a1a945689f9a90f9029d671ec32262d37}{}\index{Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}!get\+Environment@{get\+Environment}}
+\index{get\+Environment@{get\+Environment}!Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}}
+\subsubsection[{get\+Environment}]{\setlength{\rightskip}{0pt plus 5cm}get\+Environment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___template_interface_a1a945689f9a90f9029d671ec32262d37}
+Returns the bound environment for this template.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} The current environment 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___template_a1a945689f9a90f9029d671ec32262d37}{Twig\+\_\+\+Template}.
+
+\hypertarget{interface_twig___template_interface_a09fce96a9866b9a2bcba80d611c0199c}{}\index{Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}!render@{render}}
+\index{render@{render}!Twig\+\_\+\+Template\+Interface@{Twig\+\_\+\+Template\+Interface}}
+\subsubsection[{render}]{\setlength{\rightskip}{0pt plus 5cm}render (
+\begin{DoxyParamCaption}
+\item[{array}]{\$context}
+\end{DoxyParamCaption}
+)}\label{interface_twig___template_interface_a09fce96a9866b9a2bcba80d611c0199c}
+Renders the template with the given context and returns it as string.
+
+
+\begin{DoxyParams}[1]{Parameters}
+array & {\em \$context} & An array of parameters to pass to the template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The rendered template 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___template_a09fce96a9866b9a2bcba80d611c0199c}{Twig\+\_\+\+Template}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Template\+Interface.\+php\end{DoxyCompactItemize}

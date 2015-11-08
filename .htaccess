@@ -1,0 +1,9 @@
+RewriteEngine On
+
+RewriteRule ^news/$ index.php [QSA]
+RewriteRule ^news$ index.php [QSA]
+RewriteRule ^news/page(.*)$ index.php/?page=$1 [QSA]
+RewriteRule ^news/([a-zA-Z0-9_-]+)$ index.php/?name=$1&id=$2&full [QSA]
+RewriteRule ^pages/([a-zA-Z0-9_-]+)$ index.php/pages/?name=$1 [QSA]
+RewriteRule ^([a-zA-Z0-9_-]+)$ index.php/?do=$1 [QSA]
+RewriteRule ^user/([a-zA-z0-9_-]+)$ index.php/?uname=$1 [QSA]

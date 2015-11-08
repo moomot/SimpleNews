@@ -1,0 +1,286 @@
+\hypertarget{class_twig___compiler}{}\section{Twig\+\_\+\+Compiler Class Reference}
+\label{class_twig___compiler}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+Inheritance diagram for Twig\+\_\+\+Compiler\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig___compiler}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___compiler_a4f8326243132c1450a81e0a817aa1be7}{\+\_\+\+\_\+construct} (\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} \$env)
+\item 
+\hypertarget{class_twig___compiler_a2982abe8d7b767602a1485dfb4cf653d}{}{\bfseries get\+Filename} ()\label{class_twig___compiler_a2982abe8d7b767602a1485dfb4cf653d}
+
+\item 
+\hyperlink{class_twig___compiler_a1a945689f9a90f9029d671ec32262d37}{get\+Environment} ()
+\item 
+\hyperlink{class_twig___compiler_a42fdd8313c99d9c5f80219c1e192b93a}{get\+Source} ()
+\item 
+\hyperlink{class_twig___compiler_af1dcaa90386feaeb7eb51d16a8951999}{compile} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node, \$indentation=0)
+\item 
+\hypertarget{class_twig___compiler_a8e6aa981f4b2ceaf4fc20b922acebbd6}{}{\bfseries subcompile} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node, \$\hyperlink{class_twig___compiler_ad067731c51a63ace079316e8252fff4b}{raw}=true)\label{class_twig___compiler_a8e6aa981f4b2ceaf4fc20b922acebbd6}
+
+\item 
+\hyperlink{class_twig___compiler_ad067731c51a63ace079316e8252fff4b}{raw} (\$\hyperlink{class_twig___compiler_af168408db12bfe7bb7e326a765fa085d}{string})
+\item 
+\hyperlink{class_twig___compiler_aa245791a86f0178986f84c9357339aab}{write} ()
+\item 
+\hyperlink{class_twig___compiler_a02533749d6f3f827202ed66f2d86e459}{add\+Indentation} ()
+\item 
+\hyperlink{class_twig___compiler_af168408db12bfe7bb7e326a765fa085d}{string} (\$value)
+\item 
+\hyperlink{class_twig___compiler_a6f9785d88c108c5eef3d6f946c620e66}{repr} (\$value)
+\item 
+\hyperlink{class_twig___compiler_a26cbbd1f0bd9186c953c5fde5180ff22}{add\+Debug\+Info} (\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} \$node)
+\item 
+\hypertarget{class_twig___compiler_abd0ecb0136f4228db2bd963bfc1e20d7}{}{\bfseries get\+Debug\+Info} ()\label{class_twig___compiler_abd0ecb0136f4228db2bd963bfc1e20d7}
+
+\item 
+\hyperlink{class_twig___compiler_ae38e0e6d69bdddcc75a75896d5370167}{indent} (\$step=1)
+\item 
+\hyperlink{class_twig___compiler_ae5c53e68fb6c62e64ac3141b05195efa}{outdent} (\$step=1)
+\item 
+\hypertarget{class_twig___compiler_a01f345a64ec10225d4205181cf82c811}{}{\bfseries get\+Var\+Name} ()\label{class_twig___compiler_a01f345a64ec10225d4205181cf82c811}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___compiler_ac7c4a58426a915ffdd1d0fc5c7607414}{}{\bfseries \$last\+Line}\label{class_twig___compiler_ac7c4a58426a915ffdd1d0fc5c7607414}
+
+\item 
+\hypertarget{class_twig___compiler_a99a2b085f0a29bd5d799fdcbb63d261b}{}{\bfseries \$source}\label{class_twig___compiler_a99a2b085f0a29bd5d799fdcbb63d261b}
+
+\item 
+\hypertarget{class_twig___compiler_aff1f1ea116fe6e27da24f330c01d8718}{}{\bfseries \$indentation}\label{class_twig___compiler_aff1f1ea116fe6e27da24f330c01d8718}
+
+\item 
+\hypertarget{class_twig___compiler_aa99ce9ae015e958eef5782267276fbb4}{}{\bfseries \$env}\label{class_twig___compiler_aa99ce9ae015e958eef5782267276fbb4}
+
+\item 
+\hypertarget{class_twig___compiler_a601615f391a623af43e3efcffdac222a}{}{\bfseries \$debug\+Info}\label{class_twig___compiler_a601615f391a623af43e3efcffdac222a}
+
+\item 
+\hypertarget{class_twig___compiler_a9b0e3f57528b80bcd901acf12393417a}{}{\bfseries \$source\+Offset}\label{class_twig___compiler_a9b0e3f57528b80bcd901acf12393417a}
+
+\item 
+\hypertarget{class_twig___compiler_ae84c34a122875c7dd130a831dd5ba5fb}{}{\bfseries \$source\+Line}\label{class_twig___compiler_ae84c34a122875c7dd130a831dd5ba5fb}
+
+\item 
+\hypertarget{class_twig___compiler_a0722441477f957078ee2437054556cbc}{}{\bfseries \$filename}\label{class_twig___compiler_a0722441477f957078ee2437054556cbc}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Compiles a node to P\+H\+P code.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___compiler_a4f8326243132c1450a81e0a817aa1be7}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Environment}}]{\$env}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a4f8326243132c1450a81e0a817aa1be7}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} & {\em \$env} & The twig environment instance \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___compiler_a26cbbd1f0bd9186c953c5fde5180ff22}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!add\+Debug\+Info@{add\+Debug\+Info}}
+\index{add\+Debug\+Info@{add\+Debug\+Info}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{add\+Debug\+Info}]{\setlength{\rightskip}{0pt plus 5cm}add\+Debug\+Info (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a26cbbd1f0bd9186c953c5fde5180ff22}
+Adds debugging information.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The related twig node\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_a02533749d6f3f827202ed66f2d86e459}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!add\+Indentation@{add\+Indentation}}
+\index{add\+Indentation@{add\+Indentation}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{add\+Indentation}]{\setlength{\rightskip}{0pt plus 5cm}add\+Indentation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a02533749d6f3f827202ed66f2d86e459}
+Appends an indentation to the current P\+H\+P code after compilation.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_af1dcaa90386feaeb7eb51d16a8951999}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!compile@{compile}}
+\index{compile@{compile}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{compile}]{\setlength{\rightskip}{0pt plus 5cm}compile (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Node\+Interface}}]{\$node, }
+\item[{}]{\$indentation = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_af1dcaa90386feaeb7eb51d16a8951999}
+Compiles a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} & {\em \$node} & The node to compile \\
+\hline
+int & {\em \$indentation} & The current indentation\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_a1a945689f9a90f9029d671ec32262d37}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!get\+Environment@{get\+Environment}}
+\index{get\+Environment@{get\+Environment}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{get\+Environment}]{\setlength{\rightskip}{0pt plus 5cm}get\+Environment (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a1a945689f9a90f9029d671ec32262d37}
+Returns the environment instance related to this compiler.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___environment}{Twig\+\_\+\+Environment} The environment instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_a42fdd8313c99d9c5f80219c1e192b93a}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{get\+Source}]{\setlength{\rightskip}{0pt plus 5cm}get\+Source (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a42fdd8313c99d9c5f80219c1e192b93a}
+Gets the current P\+H\+P code after compilation.
+
+\begin{DoxyReturn}{Returns}
+string The P\+H\+P code 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_twig___compiler_interface_a42fdd8313c99d9c5f80219c1e192b93a}{Twig\+\_\+\+Compiler\+Interface}.
+
+\hypertarget{class_twig___compiler_ae38e0e6d69bdddcc75a75896d5370167}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!indent@{indent}}
+\index{indent@{indent}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{indent}]{\setlength{\rightskip}{0pt plus 5cm}indent (
+\begin{DoxyParamCaption}
+\item[{}]{\$step = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_ae38e0e6d69bdddcc75a75896d5370167}
+Indents the generated code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$step} & The number of indentation to add\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_ae5c53e68fb6c62e64ac3141b05195efa}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!outdent@{outdent}}
+\index{outdent@{outdent}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{outdent}]{\setlength{\rightskip}{0pt plus 5cm}outdent (
+\begin{DoxyParamCaption}
+\item[{}]{\$step = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_ae5c53e68fb6c62e64ac3141b05195efa}
+Outdents the generated code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+int & {\em \$step} & The number of indentation to remove\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Logic\+Exception} & When trying to outdent too much so the indentation would become negative \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___compiler_ad067731c51a63ace079316e8252fff4b}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!raw@{raw}}
+\index{raw@{raw}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{raw}]{\setlength{\rightskip}{0pt plus 5cm}raw (
+\begin{DoxyParamCaption}
+\item[{}]{\$string}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_ad067731c51a63ace079316e8252fff4b}
+Adds a raw string to the compiled code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$string} & The string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_a6f9785d88c108c5eef3d6f946c620e66}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!repr@{repr}}
+\index{repr@{repr}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{repr}]{\setlength{\rightskip}{0pt plus 5cm}repr (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_a6f9785d88c108c5eef3d6f946c620e66}
+Returns a P\+H\+P representation of a given value.
+
+
+\begin{DoxyParams}[1]{Parameters}
+mixed & {\em \$value} & The value to convert\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_af168408db12bfe7bb7e326a765fa085d}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!string@{string}}
+\index{string@{string}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{string}]{\setlength{\rightskip}{0pt plus 5cm}string (
+\begin{DoxyParamCaption}
+\item[{}]{\$value}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_af168408db12bfe7bb7e326a765fa085d}
+Adds a quoted string to the compiled code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$value} & The string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+\hypertarget{class_twig___compiler_aa245791a86f0178986f84c9357339aab}{}\index{Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}!write@{write}}
+\index{write@{write}!Twig\+\_\+\+Compiler@{Twig\+\_\+\+Compiler}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___compiler_aa245791a86f0178986f84c9357339aab}
+Writes a string to the compiled code by adding indentation.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___compiler}{Twig\+\_\+\+Compiler} The current compiler instance 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Compiler.\+php\end{DoxyCompactItemize}

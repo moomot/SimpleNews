@@ -1,0 +1,106 @@
+\hypertarget{class_news_item}{}\section{News\+Item Class Reference}
+\label{class_news_item}\index{News\+Item@{News\+Item}}
+Inheritance diagram for News\+Item\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_news_item}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_news_item_a9fa47254b85670cc01bf9d968c5064e3}{}{\bfseries \+\_\+\+\_\+construct} (\$title, \$author, \$full\+Description, \$date, \$short\+Description, \$thumbnail)\label{class_news_item_a9fa47254b85670cc01bf9d968c5064e3}
+
+\item 
+\hyperlink{class_news_item_aad600c9a2023020967610d3492a6c0e0}{add\+Item\+To\+Db} ()
+\item 
+\hyperlink{class_news_item_aed844dd8a243f1cfa782c176992a44d8}{is\+Exists} ()
+\item 
+\hyperlink{class_news_item_a19d08bdfd19c90288ad30800cf2789f1}{update\+Fields} (\$id)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_news_item_a25716637104ae8995d06d6c3dd89f10a}{}static {\bfseries show\+Users} ()\label{class_news_item_a25716637104ae8995d06d6c3dd89f10a}
+
+\item 
+static \hyperlink{class_news_item_a09b7b0d3e12a58217c4ce3ff9471057d}{show\+Error\+Msg} (\$err)
+\item 
+static \hyperlink{class_news_item_a8cc0f8e305092738dd124bb746383bcd}{success\+Operation} (\$text)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_news_item_a7f835c9ddb57cb4a7f20c89382f45dab}{}{\bfseries \$thumbnail}\label{class_news_item_a7f835c9ddb57cb4a7f20c89382f45dab}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_news_item_aad600c9a2023020967610d3492a6c0e0}{}\index{News\+Item@{News\+Item}!add\+Item\+To\+Db@{add\+Item\+To\+Db}}
+\index{add\+Item\+To\+Db@{add\+Item\+To\+Db}!News\+Item@{News\+Item}}
+\subsubsection[{add\+Item\+To\+Db}]{\setlength{\rightskip}{0pt plus 5cm}add\+Item\+To\+Db (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_news_item_aad600c9a2023020967610d3492a6c0e0}
+\begin{DoxyReturn}{Returns}
+resource Возвращает статус выполнения запроса к БД. 
+\end{DoxyReturn}
+\hypertarget{class_news_item_aed844dd8a243f1cfa782c176992a44d8}{}\index{News\+Item@{News\+Item}!is\+Exists@{is\+Exists}}
+\index{is\+Exists@{is\+Exists}!News\+Item@{News\+Item}}
+\subsubsection[{is\+Exists}]{\setlength{\rightskip}{0pt plus 5cm}is\+Exists (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_news_item_aed844dd8a243f1cfa782c176992a44d8}
+Проверяет существует ли новость в БД с таким же названием \begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{class_news_item_a09b7b0d3e12a58217c4ce3ff9471057d}{}\index{News\+Item@{News\+Item}!show\+Error\+Msg@{show\+Error\+Msg}}
+\index{show\+Error\+Msg@{show\+Error\+Msg}!News\+Item@{News\+Item}}
+\subsubsection[{show\+Error\+Msg}]{\setlength{\rightskip}{0pt plus 5cm}static show\+Error\+Msg (
+\begin{DoxyParamCaption}
+\item[{}]{\$err}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_news_item_a09b7b0d3e12a58217c4ce3ff9471057d}
+Вывод ошибки 
+\begin{DoxyParams}{Parameters}
+{\em \$err} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_news_item_a8cc0f8e305092738dd124bb746383bcd}{}\index{News\+Item@{News\+Item}!success\+Operation@{success\+Operation}}
+\index{success\+Operation@{success\+Operation}!News\+Item@{News\+Item}}
+\subsubsection[{success\+Operation}]{\setlength{\rightskip}{0pt plus 5cm}static success\+Operation (
+\begin{DoxyParamCaption}
+\item[{}]{\$text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_news_item_a8cc0f8e305092738dd124bb746383bcd}
+Вывод успешной операции 
+\begin{DoxyParams}{Parameters}
+{\em \$text} & \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_news_item_a19d08bdfd19c90288ad30800cf2789f1}{}\index{News\+Item@{News\+Item}!update\+Fields@{update\+Fields}}
+\index{update\+Fields@{update\+Fields}!News\+Item@{News\+Item}}
+\subsubsection[{update\+Fields}]{\setlength{\rightskip}{0pt plus 5cm}update\+Fields (
+\begin{DoxyParamCaption}
+\item[{}]{\$id}
+\end{DoxyParamCaption}
+)}\label{class_news_item_a19d08bdfd19c90288ad30800cf2789f1}
+\begin{DoxySeeAlso}{See also}
+Функция обновляет поля в БД 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}{Parameters}
+{\em \$id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+admin/modules/news/News\+Item.\+php\end{DoxyCompactItemize}

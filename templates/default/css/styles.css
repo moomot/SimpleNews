@@ -1,0 +1,16 @@
+.newsInformer p {
+    font-size: 14px;
+}
+
+.informer_t {
+    margin: 0 0 5px 0;
+    line-height: 7px;
+}
+.thumbnail img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.news-img {
+    margin-bottom: 10px
+}

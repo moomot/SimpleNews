@@ -1,0 +1,44 @@
+\hypertarget{class_twig___file_extension_escaping_strategy}{}\section{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy Class Reference}
+\label{class_twig___file_extension_escaping_strategy}\index{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy@{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_twig___file_extension_escaping_strategy_a8fffe00b91e115c496fcf7ab6e43ac02}{guess} (\$filename)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Default autoescaping strategy based on file names.
+
+This strategy sets the H\+T\+M\+L as the default autoescaping strategy, but changes it based on the filename.
+
+Note that there is no runtime performance impact as the default autoescaping strategy is set at compilation time.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___file_extension_escaping_strategy_a8fffe00b91e115c496fcf7ab6e43ac02}{}\index{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy@{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy}!guess@{guess}}
+\index{guess@{guess}!Twig\+\_\+\+File\+Extension\+Escaping\+Strategy@{Twig\+\_\+\+File\+Extension\+Escaping\+Strategy}}
+\subsubsection[{guess}]{\setlength{\rightskip}{0pt plus 5cm}static guess (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_twig___file_extension_escaping_strategy_a8fffe00b91e115c496fcf7ab6e43ac02}
+Guesses the best autoescaping strategy based on the file name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$filename} & The template file name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The escaping strategy name to use 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/File\+Extension\+Escaping\+Strategy.\+php\end{DoxyCompactItemize}

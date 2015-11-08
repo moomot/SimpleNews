@@ -1,0 +1,53 @@
+\hypertarget{interface_twig___parser_interface}{}\section{Twig\+\_\+\+Parser\+Interface Interface Reference}
+\label{interface_twig___parser_interface}\index{Twig\+\_\+\+Parser\+Interface@{Twig\+\_\+\+Parser\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_twig___parser_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___parser_interface_a1de4218ce9c025eaa18ce55616c98fe7}{parse} (\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} \$stream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by parser classes.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000019}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___parser_interface_a1de4218ce9c025eaa18ce55616c98fe7}{}\index{Twig\+\_\+\+Parser\+Interface@{Twig\+\_\+\+Parser\+Interface}!parse@{parse}}
+\index{parse@{parse}!Twig\+\_\+\+Parser\+Interface@{Twig\+\_\+\+Parser\+Interface}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token\+Stream}}]{\$stream}
+\end{DoxyParamCaption}
+)}\label{interface_twig___parser_interface_a1de4218ce9c025eaa18ce55616c98fe7}
+Converts a token stream to a node tree.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} & {\em \$stream} & A token stream instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___node___module}{Twig\+\_\+\+Node\+\_\+\+Module} A node tree
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When the token stream is syntactically or semantically wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Parser\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,293 @@
+\hypertarget{class_twig___loader___filesystem}{}\section{Twig\+\_\+\+Loader\+\_\+\+Filesystem Class Reference}
+\label{class_twig___loader___filesystem}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+Inheritance diagram for Twig\+\_\+\+Loader\+\_\+\+Filesystem\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig___loader___filesystem}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___loader___filesystem_a83e29a1e62ec06af26802d3ed070ffc3}{\+\_\+\+\_\+construct} (\$paths=array())
+\item 
+\hyperlink{class_twig___loader___filesystem_a8521d3d613a29e60cc1bfdf4b85bba75}{get\+Paths} (\$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)
+\item 
+\hyperlink{class_twig___loader___filesystem_ae4c74dabb3e9ba4103ffd4e8febcac21}{get\+Namespaces} ()
+\item 
+\hyperlink{class_twig___loader___filesystem_a7e388aa6a6e5cce6b57ff23c154860b1}{set\+Paths} (\$paths, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)
+\item 
+\hyperlink{class_twig___loader___filesystem_a758f4df0ca7ea3ac2802742ac202951f}{add\+Path} (\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)
+\item 
+\hyperlink{class_twig___loader___filesystem_a22161c5fd7e03e040c8f0aaa493f6867}{prepend\+Path} (\$path, \$namespace=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)
+\item 
+\hyperlink{class_twig___loader___filesystem_a8c6017d8ed0800a8d6b201883fcfb4bd}{get\+Source} (\$name)
+\item 
+\hyperlink{class_twig___loader___filesystem_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{get\+Cache\+Key} (\$name)
+\item 
+\hyperlink{class_twig___loader___filesystem_a0909de156d39accf2e3c52f4bce3765f}{exists} (\$name)
+\item 
+\hyperlink{class_twig___loader___filesystem_a3ee0419b212dc4f6f1e8a5a615423ad8}{is\+Fresh} (\$name, \$time)
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_twig___loader___filesystem_af41bf3185112b600125464a5972ecf38}{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E} = \textquotesingle{}\+\_\+\+\_\+main\+\_\+\+\_\+\textquotesingle{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___loader___filesystem_a7e542943cb0ed5976c2ae6052254af6b}{}{\bfseries find\+Template} (\$name)\label{class_twig___loader___filesystem_a7e542943cb0ed5976c2ae6052254af6b}
+
+\item 
+\hypertarget{class_twig___loader___filesystem_ad069239b3add1abec2c37e1b1f51cc5d}{}{\bfseries parse\+Name} (\$name, \$default=self\+::\+M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E)\label{class_twig___loader___filesystem_ad069239b3add1abec2c37e1b1f51cc5d}
+
+\item 
+\hypertarget{class_twig___loader___filesystem_a565b09107e424878dd2adaa4231ad84d}{}{\bfseries normalize\+Name} (\$name)\label{class_twig___loader___filesystem_a565b09107e424878dd2adaa4231ad84d}
+
+\item 
+\hypertarget{class_twig___loader___filesystem_a37f7944f8c6847126c5ef65e189f84b3}{}{\bfseries validate\+Name} (\$name)\label{class_twig___loader___filesystem_a37f7944f8c6847126c5ef65e189f84b3}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_twig___loader___filesystem_a20dd412769e0754189f5ce036e857a37}{}{\bfseries \$paths} = array()\label{class_twig___loader___filesystem_a20dd412769e0754189f5ce036e857a37}
+
+\item 
+\hypertarget{class_twig___loader___filesystem_ac2dc76d756ec398393d4b1d23659276c}{}{\bfseries \$cache} = array()\label{class_twig___loader___filesystem_ac2dc76d756ec398393d4b1d23659276c}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads template from the filesystem.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_twig___loader___filesystem_a83e29a1e62ec06af26802d3ed070ffc3}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$paths = {\ttfamily array()}}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a83e29a1e62ec06af26802d3ed070ffc3}
+Constructor.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & A path or an array of paths where to look for templates \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___loader___filesystem_a758f4df0ca7ea3ac2802742ac202951f}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!add\+Path@{add\+Path}}
+\index{add\+Path@{add\+Path}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{add\+Path}]{\setlength{\rightskip}{0pt plus 5cm}add\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a758f4df0ca7ea3ac2802742ac202951f}
+Adds a path where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A path where to look for templates \\
+\hline
+string & {\em \$namespace} & A path name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___loader___filesystem_a0909de156d39accf2e3c52f4bce3765f}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!exists@{exists}}
+\index{exists@{exists}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a0909de156d39accf2e3c52f4bce3765f}
+\{Check if we have the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to check if we can load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool If the template source code is handled by this loader or not
+\end{DoxyReturn}
+\} 
+
+Implements \hyperlink{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Exists\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___filesystem_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Cache\+Key@{get\+Cache\+Key}}
+\index{get\+Cache\+Key@{get\+Cache\+Key}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{get\+Cache\+Key}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_aaf1587bcc7c8f06e87be6ccaf76fb6ea}
+\{Gets the cache key to use for the cache for a given template name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The cache key
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{Twig\+\_\+\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___filesystem_ae4c74dabb3e9ba4103ffd4e8febcac21}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Namespaces@{get\+Namespaces}}
+\index{get\+Namespaces@{get\+Namespaces}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{get\+Namespaces}]{\setlength{\rightskip}{0pt plus 5cm}get\+Namespaces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_ae4c74dabb3e9ba4103ffd4e8febcac21}
+Returns the path namespaces.
+
+The main namespace is always defined.
+
+\begin{DoxyReturn}{Returns}
+array The array of defined namespaces 
+\end{DoxyReturn}
+\hypertarget{class_twig___loader___filesystem_a8521d3d613a29e60cc1bfdf4b85bba75}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Paths@{get\+Paths}}
+\index{get\+Paths@{get\+Paths}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{get\+Paths}]{\setlength{\rightskip}{0pt plus 5cm}get\+Paths (
+\begin{DoxyParamCaption}
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a8521d3d613a29e60cc1bfdf4b85bba75}
+Returns the paths to the templates.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$namespace} & A path namespace\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+array The array of paths where to look for templates 
+\end{DoxyReturn}
+\hypertarget{class_twig___loader___filesystem_a8c6017d8ed0800a8d6b201883fcfb4bd}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{get\+Source}]{\setlength{\rightskip}{0pt plus 5cm}get\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a8c6017d8ed0800a8d6b201883fcfb4bd}
+\{Gets the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The template source code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_a8c6017d8ed0800a8d6b201883fcfb4bd}{Twig\+\_\+\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___filesystem_a3ee0419b212dc4f6f1e8a5a615423ad8}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!is\+Fresh@{is\+Fresh}}
+\index{is\+Fresh@{is\+Fresh}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{is\+Fresh}]{\setlength{\rightskip}{0pt plus 5cm}is\+Fresh (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$time}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a3ee0419b212dc4f6f1e8a5a615423ad8}
+\{Returns true if the template is still fresh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+timestamp & {\em \$time} & The last modification time of the cached template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the template is fresh, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_a3ee0419b212dc4f6f1e8a5a615423ad8}{Twig\+\_\+\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___filesystem_a22161c5fd7e03e040c8f0aaa493f6867}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!prepend\+Path@{prepend\+Path}}
+\index{prepend\+Path@{prepend\+Path}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{prepend\+Path}]{\setlength{\rightskip}{0pt plus 5cm}prepend\+Path (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a22161c5fd7e03e040c8f0aaa493f6867}
+Prepends a path where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$path} & A path where to look for templates \\
+\hline
+string & {\em \$namespace} & A path name\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{class_twig___loader___filesystem_a7e388aa6a6e5cce6b57ff23c154860b1}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!set\+Paths@{set\+Paths}}
+\index{set\+Paths@{set\+Paths}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{set\+Paths}]{\setlength{\rightskip}{0pt plus 5cm}set\+Paths (
+\begin{DoxyParamCaption}
+\item[{}]{\$paths, }
+\item[{}]{\$namespace = {\ttfamily self\+:\+:MAIN\+\_\+NAMESPACE}}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___filesystem_a7e388aa6a6e5cce6b57ff23c154860b1}
+Sets the paths where templates are stored.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string | array & {\em \$paths} & A path or an array of paths where to look for templates \\
+\hline
+string & {\em \$namespace} & A path namespace \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Field Documentation}
+\hypertarget{class_twig___loader___filesystem_af41bf3185112b600125464a5972ecf38}{}\index{Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}!M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E@{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E}}
+\index{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E@{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E}!Twig\+\_\+\+Loader\+\_\+\+Filesystem@{Twig\+\_\+\+Loader\+\_\+\+Filesystem}}
+\subsubsection[{M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E}]{\setlength{\rightskip}{0pt plus 5cm}const M\+A\+I\+N\+\_\+\+N\+A\+M\+E\+S\+P\+A\+C\+E = \textquotesingle{}\+\_\+\+\_\+main\+\_\+\+\_\+\textquotesingle{}}\label{class_twig___loader___filesystem_af41bf3185112b600125464a5972ecf38}
+Identifier of the main namespace. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/\+Loader/Filesystem.\+php\end{DoxyCompactItemize}

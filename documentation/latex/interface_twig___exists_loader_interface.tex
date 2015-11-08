@@ -1,0 +1,52 @@
+\hypertarget{interface_twig___exists_loader_interface}{}\section{Twig\+\_\+\+Exists\+Loader\+Interface Interface Reference}
+\label{interface_twig___exists_loader_interface}\index{Twig\+\_\+\+Exists\+Loader\+Interface@{Twig\+\_\+\+Exists\+Loader\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Exists\+Loader\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.600000cm]{interface_twig___exists_loader_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}{exists} (\$name)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Adds an \hyperlink{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}{exists()} method for loaders.
+
+\begin{DoxyAuthor}{Author}
+Florin Patan \href{mailto:florinpatan@gmail.com}{\tt florinpatan@gmail.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000003}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}{}\index{Twig\+\_\+\+Exists\+Loader\+Interface@{Twig\+\_\+\+Exists\+Loader\+Interface}!exists@{exists}}
+\index{exists@{exists}!Twig\+\_\+\+Exists\+Loader\+Interface@{Twig\+\_\+\+Exists\+Loader\+Interface}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}
+Check if we have the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to check if we can load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool If the template source code is handled by this loader or not 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___loader___filesystem_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Loader\+\_\+\+Filesystem}, \hyperlink{class_twig___loader___chain_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Loader\+\_\+\+Chain}, \hyperlink{class_twig___loader___array_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Loader\+\_\+\+Array}, and \hyperlink{class_twig___loader___string_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Loader\+\_\+\+String}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Exists\+Loader\+Interface.\+php\end{DoxyCompactItemize}

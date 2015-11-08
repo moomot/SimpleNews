@@ -1,0 +1,141 @@
+\hypertarget{class_twig___loader___string}{}\section{Twig\+\_\+\+Loader\+\_\+\+String Class Reference}
+\label{class_twig___loader___string}\index{Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}}
+Inheritance diagram for Twig\+\_\+\+Loader\+\_\+\+String\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_twig___loader___string}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___loader___string_a8c6017d8ed0800a8d6b201883fcfb4bd}{get\+Source} (\$name)
+\item 
+\hyperlink{class_twig___loader___string_a0909de156d39accf2e3c52f4bce3765f}{exists} (\$name)
+\item 
+\hyperlink{class_twig___loader___string_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{get\+Cache\+Key} (\$name)
+\item 
+\hyperlink{class_twig___loader___string_a3ee0419b212dc4f6f1e8a5a615423ad8}{is\+Fresh} (\$name, \$time)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Loads a template from a string.
+
+This loader should N\+E\+V\+E\+R be used. It only exists for Twig internal purposes.
+
+When using this loader with a cache mechanism, you should know that a new cache key is generated each time a template content \char`\"{}changes\char`\"{} (the cache key being the source code of the template). If you don\textquotesingle{}t want to see your cache grows out of control, you need to take care of clearing the old cache file by yourself.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___loader___string_a0909de156d39accf2e3c52f4bce3765f}{}\index{Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}!exists@{exists}}
+\index{exists@{exists}!Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}}
+\subsubsection[{exists}]{\setlength{\rightskip}{0pt plus 5cm}exists (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___string_a0909de156d39accf2e3c52f4bce3765f}
+\{Check if we have the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to check if we can load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool If the template source code is handled by this loader or not
+\end{DoxyReturn}
+\} 
+
+Implements \hyperlink{interface_twig___exists_loader_interface_a0909de156d39accf2e3c52f4bce3765f}{Twig\+\_\+\+Exists\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___string_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{}\index{Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}!get\+Cache\+Key@{get\+Cache\+Key}}
+\index{get\+Cache\+Key@{get\+Cache\+Key}!Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}}
+\subsubsection[{get\+Cache\+Key}]{\setlength{\rightskip}{0pt plus 5cm}get\+Cache\+Key (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___string_aaf1587bcc7c8f06e87be6ccaf76fb6ea}
+\{Gets the cache key to use for the cache for a given template name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The cache key
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_aaf1587bcc7c8f06e87be6ccaf76fb6ea}{Twig\+\_\+\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___string_a8c6017d8ed0800a8d6b201883fcfb4bd}{}\index{Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}!get\+Source@{get\+Source}}
+\index{get\+Source@{get\+Source}!Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}}
+\subsubsection[{get\+Source}]{\setlength{\rightskip}{0pt plus 5cm}get\+Source (
+\begin{DoxyParamCaption}
+\item[{}]{\$name}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___string_a8c6017d8ed0800a8d6b201883fcfb4bd}
+\{Gets the source code of a template, given its name.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The name of the template to load\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string The template source code
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_a8c6017d8ed0800a8d6b201883fcfb4bd}{Twig\+\_\+\+Loader\+Interface}.
+
+\hypertarget{class_twig___loader___string_a3ee0419b212dc4f6f1e8a5a615423ad8}{}\index{Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}!is\+Fresh@{is\+Fresh}}
+\index{is\+Fresh@{is\+Fresh}!Twig\+\_\+\+Loader\+\_\+\+String@{Twig\+\_\+\+Loader\+\_\+\+String}}
+\subsubsection[{is\+Fresh}]{\setlength{\rightskip}{0pt plus 5cm}is\+Fresh (
+\begin{DoxyParamCaption}
+\item[{}]{\$name, }
+\item[{}]{\$time}
+\end{DoxyParamCaption}
+)}\label{class_twig___loader___string_a3ee0419b212dc4f6f1e8a5a615423ad8}
+\{Returns true if the template is still fresh.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$name} & The template name \\
+\hline
+timestamp & {\em \$time} & The last modification time of the cached template\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool true if the template is fresh, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___loader}{Twig\+\_\+\+Error\+\_\+\+Loader}} & When \$name is not found\\
+\hline
+\end{DoxyExceptions}
+\} 
+
+Implements \hyperlink{interface_twig___loader_interface_a3ee0419b212dc4f6f1e8a5a615423ad8}{Twig\+\_\+\+Loader\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/\+Loader/String.\+php\end{DoxyCompactItemize}

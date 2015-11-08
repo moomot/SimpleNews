@@ -1,0 +1,93 @@
+\hypertarget{interface_twig___token_parser_interface}{}\section{Twig\+\_\+\+Token\+Parser\+Interface Interface Reference}
+\label{interface_twig___token_parser_interface}\index{Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Token\+Parser\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=12.000000cm]{interface_twig___token_parser_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___token_parser_interface_a68fca2cbecd7ee6643879ae3d5c6f129}{set\+Parser} (\hyperlink{class_twig___parser}{Twig\+\_\+\+Parser} \$parser)
+\item 
+\hyperlink{interface_twig___token_parser_interface_a5dfa2e269321584fb74e8b43dabe0efd}{parse} (\hyperlink{class_twig___token}{Twig\+\_\+\+Token} \$token)
+\item 
+\hyperlink{interface_twig___token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{get\+Tag} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by token parsers.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com} 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{}\index{Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}!get\+Tag@{get\+Tag}}
+\index{get\+Tag@{get\+Tag}!Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}}
+\subsubsection[{get\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}
+Gets the tag name associated with this token parser.
+
+\begin{DoxyReturn}{Returns}
+string The tag name 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___token_parser___for_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+For}, \hyperlink{class_twig___token_parser___if_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+If}, \hyperlink{class_twig___token_parser___auto_escape_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Auto\+Escape}, \hyperlink{class_twig___token_parser___set_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Set}, \hyperlink{class_twig___token_parser___block_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}, \hyperlink{class_twig___token_parser___use_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Use}, \hyperlink{class_twig___token_parser___include_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Include}, \hyperlink{class_twig___token_parser___from_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+From}, \hyperlink{class_twig___token_parser___macro_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Macro}, \hyperlink{class_twig___token_parser___sandbox_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Sandbox}, \hyperlink{class_twig___token_parser___embed_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Embed}, \hyperlink{class_twig___token_parser___filter_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Filter}, \hyperlink{class_twig___token_parser___spaceless_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Spaceless}, \hyperlink{class_twig___token_parser___extends_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Extends}, \hyperlink{class_twig___token_parser___import_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Import}, \hyperlink{class_twig___token_parser___do_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Do}, and \hyperlink{class_twig___token_parser___flush_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+\_\+\+Flush}.
+
+\hypertarget{interface_twig___token_parser_interface_a5dfa2e269321584fb74e8b43dabe0efd}{}\index{Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}!parse@{parse}}
+\index{parse@{parse}!Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token}}]{\$token}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_interface_a5dfa2e269321584fb74e8b43dabe0efd}
+Parses a token and returns a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token}{Twig\+\_\+\+Token} & {\em \$token} & A \hyperlink{class_twig___token}{Twig\+\_\+\+Token} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} A \hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} instance
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_twig___token_parser___auto_escape_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Auto\+Escape}, \hyperlink{class_twig___token_parser___set_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Set}, \hyperlink{class_twig___token_parser___if_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+If}, \hyperlink{class_twig___token_parser___use_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Use}, \hyperlink{class_twig___token_parser___spaceless_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Spaceless}, \hyperlink{class_twig___token_parser___for_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+For}, \hyperlink{class_twig___token_parser___block_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}, \hyperlink{class_twig___token_parser___sandbox_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Sandbox}, \hyperlink{class_twig___token_parser___include_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Include}, \hyperlink{class_twig___token_parser___filter_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Filter}, \hyperlink{class_twig___token_parser___macro_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Macro}, \hyperlink{class_twig___token_parser___extends_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Extends}, \hyperlink{class_twig___token_parser___from_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+From}, \hyperlink{class_twig___token_parser___import_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Import}, \hyperlink{class_twig___token_parser___flush_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Flush}, \hyperlink{class_twig___token_parser___do_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Do}, and \hyperlink{class_twig___token_parser___embed_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+\_\+\+Embed}.
+
+\hypertarget{interface_twig___token_parser_interface_a68fca2cbecd7ee6643879ae3d5c6f129}{}\index{Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}!set\+Parser@{set\+Parser}}
+\index{set\+Parser@{set\+Parser}!Twig\+\_\+\+Token\+Parser\+Interface@{Twig\+\_\+\+Token\+Parser\+Interface}}
+\subsubsection[{set\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}set\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Parser}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_interface_a68fca2cbecd7ee6643879ae3d5c6f129}
+Sets the parser associated with this token parser
+
+
+\begin{DoxyParams}{Parameters}
+{\em \$parser} & A \hyperlink{class_twig___parser}{Twig\+\_\+\+Parser} instance \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_twig___token_parser_a68fca2cbecd7ee6643879ae3d5c6f129}{Twig\+\_\+\+Token\+Parser}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Token\+Parser\+Interface.\+php\end{DoxyCompactItemize}

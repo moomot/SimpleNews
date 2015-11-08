@@ -1,0 +1,92 @@
+\hypertarget{interface_twig___token_parser_broker_interface}{}\section{Twig\+\_\+\+Token\+Parser\+Broker\+Interface Interface Reference}
+\label{interface_twig___token_parser_broker_interface}\index{Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Token\+Parser\+Broker\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_twig___token_parser_broker_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___token_parser_broker_interface_adff2d8a3b28dce12e0bccd335af4012f}{get\+Token\+Parser} (\$tag)
+\item 
+\hyperlink{interface_twig___token_parser_broker_interface_ac16cd9a5f9db326226c01aa3ee943857}{set\+Parser} (\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} \$parser)
+\item 
+\hyperlink{interface_twig___token_parser_broker_interface_a4b6907ea868dc9053e1f7d6260fa4b4f}{get\+Parser} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by token parser brokers.
+
+Token parser brokers allows to implement custom logic in the process of resolving a token parser for a given tag name.
+
+\begin{DoxyAuthor}{Author}
+Arnaud Le Blanc \href{mailto:arnaud.lb@gmail.com}{\tt arnaud.\+lb@gmail.\+com} 
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000028}{Deprecated}]since 1.\+12 (to be removed in 2.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___token_parser_broker_interface_a4b6907ea868dc9053e1f7d6260fa4b4f}{}\index{Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}!get\+Parser@{get\+Parser}}
+\index{get\+Parser@{get\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}}
+\subsubsection[{get\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}get\+Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_broker_interface_a4b6907ea868dc9053e1f7d6260fa4b4f}
+Gets the \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface}.
+
+\begin{DoxyReturn}{Returns}
+null$\vert$\+Twig\+\_\+\+Parser\+Interface A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} instance or null 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___token_parser_broker_a4b6907ea868dc9053e1f7d6260fa4b4f}{Twig\+\_\+\+Token\+Parser\+Broker}.
+
+\hypertarget{interface_twig___token_parser_broker_interface_adff2d8a3b28dce12e0bccd335af4012f}{}\index{Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}!get\+Token\+Parser@{get\+Token\+Parser}}
+\index{get\+Token\+Parser@{get\+Token\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}}
+\subsubsection[{get\+Token\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}get\+Token\+Parser (
+\begin{DoxyParamCaption}
+\item[{}]{\$tag}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_broker_interface_adff2d8a3b28dce12e0bccd335af4012f}
+Gets a Token\+Parser suitable for a tag.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$tag} & A tag name\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+null$\vert$\+Twig\+\_\+\+Token\+Parser\+Interface A \hyperlink{interface_twig___token_parser_interface}{Twig\+\_\+\+Token\+Parser\+Interface} or null if no suitable Token\+Parser was found 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_twig___token_parser_broker_adff2d8a3b28dce12e0bccd335af4012f}{Twig\+\_\+\+Token\+Parser\+Broker}.
+
+\hypertarget{interface_twig___token_parser_broker_interface_ac16cd9a5f9db326226c01aa3ee943857}{}\index{Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}!set\+Parser@{set\+Parser}}
+\index{set\+Parser@{set\+Parser}!Twig\+\_\+\+Token\+Parser\+Broker\+Interface@{Twig\+\_\+\+Token\+Parser\+Broker\+Interface}}
+\subsubsection[{set\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}set\+Parser (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Parser\+Interface}}]{\$parser}
+\end{DoxyParamCaption}
+)}\label{interface_twig___token_parser_broker_interface_ac16cd9a5f9db326226c01aa3ee943857}
+Calls \hyperlink{interface_twig___token_parser_interface_a68fca2cbecd7ee6643879ae3d5c6f129}{Twig\+\_\+\+Token\+Parser\+Interface\+::set\+Parser} on all parsers the implementation knows of.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} & {\em \$parser} & A \hyperlink{interface_twig___parser_interface}{Twig\+\_\+\+Parser\+Interface} interface \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \hyperlink{class_twig___token_parser_broker_ac16cd9a5f9db326226c01aa3ee943857}{Twig\+\_\+\+Token\+Parser\+Broker}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Token\+Parser\+Broker\+Interface.\+php\end{DoxyCompactItemize}

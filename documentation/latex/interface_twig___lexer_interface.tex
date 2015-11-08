@@ -1,0 +1,60 @@
+\hypertarget{interface_twig___lexer_interface}{}\section{Twig\+\_\+\+Lexer\+Interface Interface Reference}
+\label{interface_twig___lexer_interface}\index{Twig\+\_\+\+Lexer\+Interface@{Twig\+\_\+\+Lexer\+Interface}}
+Inheritance diagram for Twig\+\_\+\+Lexer\+Interface\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{interface_twig___lexer_interface}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{interface_twig___lexer_interface_a8db0ea9f7a98bc3fd2ba77126ab20491}{tokenize} (\$code, \$filename=null)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface implemented by lexer classes.
+
+\begin{DoxyAuthor}{Author}
+Fabien Potencier \href{mailto:fabien@symfony.com}{\tt fabien@symfony.\+com}
+\end{DoxyAuthor}
+\begin{DoxyRefDesc}{Deprecated}
+\item[\hyperlink{deprecated__deprecated000016}{Deprecated}]since 1.\+12 (to be removed in 3.\+0) \end{DoxyRefDesc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{interface_twig___lexer_interface_a8db0ea9f7a98bc3fd2ba77126ab20491}{}\index{Twig\+\_\+\+Lexer\+Interface@{Twig\+\_\+\+Lexer\+Interface}!tokenize@{tokenize}}
+\index{tokenize@{tokenize}!Twig\+\_\+\+Lexer\+Interface@{Twig\+\_\+\+Lexer\+Interface}}
+\subsubsection[{tokenize}]{\setlength{\rightskip}{0pt plus 5cm}tokenize (
+\begin{DoxyParamCaption}
+\item[{}]{\$code, }
+\item[{}]{\$filename = {\ttfamily null}}
+\end{DoxyParamCaption}
+)}\label{interface_twig___lexer_interface_a8db0ea9f7a98bc3fd2ba77126ab20491}
+Tokenizes a source code.
+
+
+\begin{DoxyParams}[1]{Parameters}
+string & {\em \$code} & The source code \\
+\hline
+string & {\em \$filename} & A unique identifier for the source code\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{class_twig___token_stream}{Twig\+\_\+\+Token\+Stream} A token stream instance
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \hyperlink{class_twig___error___syntax}{Twig\+\_\+\+Error\+\_\+\+Syntax}} & When the code is syntactically wrong \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \hyperlink{class_twig___lexer_a8db0ea9f7a98bc3fd2ba77126ab20491}{Twig\+\_\+\+Lexer}.
+
+
+
+The documentation for this interface was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/Lexer\+Interface.\+php\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_twig___token_parser___block}{}\section{Twig\+\_\+\+Token\+Parser\+\_\+\+Block Class Reference}
+\label{class_twig___token_parser___block}\index{Twig\+\_\+\+Token\+Parser\+\_\+\+Block@{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}}
+Inheritance diagram for Twig\+\_\+\+Token\+Parser\+\_\+\+Block\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_twig___token_parser___block}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_twig___token_parser___block_a5dfa2e269321584fb74e8b43dabe0efd}{parse} (\hyperlink{class_twig___token}{Twig\+\_\+\+Token} \$token)
+\item 
+\hypertarget{class_twig___token_parser___block_aa976dc013d35c2813752149bacd88902}{}{\bfseries decide\+Block\+End} (\hyperlink{class_twig___token}{Twig\+\_\+\+Token} \$token)\label{class_twig___token_parser___block_aa976dc013d35c2813752149bacd88902}
+
+\item 
+\hyperlink{class_twig___token_parser___block_ab86ba36154b20e6bbfa3ba705f12f9d6}{get\+Tag} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Marks a section of a template as being reusable.
+
+
+\begin{DoxyPre}
+ \{\% block head \%\}
+   <link rel="stylesheet" href="style.css">
+   <title>\{\% block title \%\}\{\% endblock \%\} - My Webpage</title>
+ \{\% endblock \%\}
+\end{DoxyPre}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_twig___token_parser___block_ab86ba36154b20e6bbfa3ba705f12f9d6}{}\index{Twig\+\_\+\+Token\+Parser\+\_\+\+Block@{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}!get\+Tag@{get\+Tag}}
+\index{get\+Tag@{get\+Tag}!Twig\+\_\+\+Token\+Parser\+\_\+\+Block@{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}}
+\subsubsection[{get\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}get\+Tag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser___block_ab86ba36154b20e6bbfa3ba705f12f9d6}
+Gets the tag name associated with this token parser.
+
+\begin{DoxyReturn}{Returns}
+string The tag name 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_twig___token_parser_interface_ab86ba36154b20e6bbfa3ba705f12f9d6}{Twig\+\_\+\+Token\+Parser\+Interface}.
+
+\hypertarget{class_twig___token_parser___block_a5dfa2e269321584fb74e8b43dabe0efd}{}\index{Twig\+\_\+\+Token\+Parser\+\_\+\+Block@{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}!parse@{parse}}
+\index{parse@{parse}!Twig\+\_\+\+Token\+Parser\+\_\+\+Block@{Twig\+\_\+\+Token\+Parser\+\_\+\+Block}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}parse (
+\begin{DoxyParamCaption}
+\item[{{\bf Twig\+\_\+\+Token}}]{\$token}
+\end{DoxyParamCaption}
+)}\label{class_twig___token_parser___block_a5dfa2e269321584fb74e8b43dabe0efd}
+Parses a token and returns a node.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\hyperlink{class_twig___token}{Twig\+\_\+\+Token} & {\em \$token} & A \hyperlink{class_twig___token}{Twig\+\_\+\+Token} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} A \hyperlink{interface_twig___node_interface}{Twig\+\_\+\+Node\+Interface} instance 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{interface_twig___token_parser_interface_a5dfa2e269321584fb74e8b43dabe0efd}{Twig\+\_\+\+Token\+Parser\+Interface}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+engine/lib/\+Twig/\+Token\+Parser/Block.\+php\end{DoxyCompactItemize}
